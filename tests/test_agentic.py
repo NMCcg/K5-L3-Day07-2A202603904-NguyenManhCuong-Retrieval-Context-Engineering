@@ -24,6 +24,8 @@ class AgentTests(unittest.TestCase):
         r = Retriever([CHUNK]); result = run_agent('Hoàn tiền?', c, r, filters={'year': 2025})
         self.assertEqual(result['status'], 'answered')
         self.assertEqual(result['citations'], ['c1'])
+        self.assertIn('[c1]', result['context'])
+        self.assertEqual(result['search_count'], 1)
         self.assertEqual(r.calls, [('hoàn tiền', {'year': 2025}, 3)])
         self.assertEqual(result['events'][0]['context_ids'], ['c1'])
 

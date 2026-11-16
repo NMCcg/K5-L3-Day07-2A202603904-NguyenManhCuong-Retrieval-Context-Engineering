@@ -4,6 +4,7 @@ Adapters are intentionally not provided: Day 6 has no fixed database schema and
 model providers differ. Never use fake adapters to report benchmark quality.
 """
 from typing import Any, Protocol
+import time
 from baseline import pack_context
 
 
@@ -39,6 +40,7 @@ def run_agent(question: str, controller: Controller, retriever: Retriever, *,
     """
     if not question.strip() or max_searches < 1 or top_k < 1 or budget < 1:
         raise ValueError('question, max_searches, top_k hoặc budget không hợp lệ')
+    started = time.perf_counter()
     history: list[dict[str, Any]] = []
     chunks: dict[str, dict[str, Any]] = {}
     candidates: list[dict[str, Any]] = []
@@ -47,7 +49,12 @@ def run_agent(question: str, controller: Controller, retriever: Retriever, *,
         action = controller.decide(question, history)
         if action.get('action') == 'search':
             if sum(e['event'] == 'search' for e in events) >= max_searches:
-                return {'status': 'abstain', 'answer': 'Không đủ bằng chứng để trả lời.', 'citations': [], 'events': events + [{'event': 'search_limit'}]}
+                return {'status': 'abstain', 'answer': 'Không đủ bằng chứng để trả lời.',
+                        'citations': [], 'events': events + [{'event': 'search_limit'}],
+                        'context': history[-1]['context'] if history else '',
+                        'context_ids': history[-1]['context_ids'] if history else [],
+                        'search_count': sum(e['event'] == 'search' for e in events),
+                        'elapsed_ms': (time.perf_counter() - started) * 1000}
             query = action.get('query')
             if not isinstance(query, str) or not query.strip():
                 raise ValueError('search query phải là chuỗi không rỗng')
@@ -68,8 +75,23 @@ def run_agent(question: str, controller: Controller, retriever: Retriever, *,
                 raise ValueError('answer/citations không hợp lệ')
             valid = bool(answer.strip() and citations and all(i in chunks and f'[{i}]' in answer for i in citations))
             if valid:
-                return {'status': 'answered', 'answer': answer, 'citations': citations, 'events': events + [{'event': 'answer'}]}
-            return {'status': 'abstain', 'answer': 'Không đủ bằng chứng để trả lời.', 'citations': [], 'events': events + [{'event': 'invalid_or_missing_citations'}]}
+                return {'status': 'answered', 'answer': answer, 'citations': citations,
+                        'events': events + [{'event': 'answer'}],
+                        'context': history[-1]['context'] if history else '',
+                        'context_ids': history[-1]['context_ids'] if history else [],
+                        'search_count': sum(e['event'] == 'search' for e in events),
+                        'elapsed_ms': (time.perf_counter() - started) * 1000}
+            return {'status': 'abstain', 'answer': 'Không đủ bằng chứng để trả lời.',
+                    'citations': [], 'events': events + [{'event': 'invalid_or_missing_citations'}],
+                    'context': history[-1]['context'] if history else '',
+                    'context_ids': history[-1]['context_ids'] if history else [],
+                    'search_count': sum(e['event'] == 'search' for e in events),
+                    'elapsed_ms': (time.perf_counter() - started) * 1000}
         else:
             raise ValueError('action phải là search hoặc answer')
-    return {'status': 'abstain', 'answer': 'Không đủ bằng chứng để trả lời.', 'citations': [], 'events': events}
+    return {'status': 'abstain', 'answer': 'Không đủ bằng chứng để trả lời.',
+            'citations': [], 'events': events,
+            'context': history[-1]['context'] if history else '',
+            'context_ids': history[-1]['context_ids'] if history else [],
+            'search_count': sum(e['event'] == 'search' for e in events),
+            'elapsed_ms': (time.perf_counter() - started) * 1000}

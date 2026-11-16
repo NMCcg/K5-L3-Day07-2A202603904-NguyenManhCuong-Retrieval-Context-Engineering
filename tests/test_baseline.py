@@ -8,7 +8,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'starter'))
-from baseline import TfidfIndex, evaluate, hit, pack_context, validate
+from baseline import BM25Index, RRFIndex, TfidfIndex, evaluate, hit, pack_context, validate
 from convert_day6 import convert_chunk, convert_question
 
 
@@ -48,6 +48,67 @@ class BaselineTests(unittest.TestCase):
         self.assertTrue(trace['hit3'])
         self.assertFalse(trace['context_hit'])
 
+    def test_bm25_filter_and_rrf_return_ranked_candidates(self):
+        chunks = [
+            chunk('a', 'hoàn tiền hoàn tiền trong bảy ngày'),
+            chunk('b', 'giao hàng hoàn tiền trong bảy ngày', page=2),
+        ]
+        chunks[0]['metadata']['chapter'] = 'policy'
+        chunks[1]['metadata']['chapter'] = 'shipping'
+        bm25 = BM25Index(chunks)
+        filtered = bm25.search('hoàn tiền', top_k=2, filters={'chapter': 'shipping'})
+        self.assertEqual([row['id'] for row in filtered], ['b'])
+        fused = RRFIndex(TfidfIndex(chunks), bm25).search('hoàn tiền', top_k=2)
+        self.assertEqual(len(fused), 2)
+        self.assertTrue(all(row['strategy'] == 'rrf' for row in fused))
+        with self.assertRaises(ValueError):
+            BM25Index(chunks, b=1.1)
+
+    def test_multihop_requires_all_evidence_and_unanswerable_is_excluded(self):
+        chunks = [
+            chunk('topology', 'Topology có router và kế hoạch IP/SID.', page=44),
+            chunk('recovery', 'Sau link failure, lưu lượng chuyển sang backup path.', page=62),
+        ]
+        multi_hop = {
+            'id': 'multi', 'split': 'dev', 'question': 'Topology IP SID và backup path khi link failure.',
+            'expected_answer': 'Topology được chuẩn bị và lưu lượng đổi đường khi lỗi.',
+            'required_evidence': [
+                {'source_id': 'doc', 'page': 44, 'evidence': 'kế hoạch IP/SID'},
+                {'source_id': 'doc', 'page': 62, 'evidence': 'backup path'},
+            ],
+        }
+        missing = {
+            'id': 'missing', 'split': 'dev', 'question': 'Giá giấy phép là bao nhiêu?',
+            'answerable': False, 'absence_reason': 'Không có giá trong tài liệu.',
+        }
+        validate(chunks, [multi_hop, missing])
+        traces = evaluate(TfidfIndex(chunks), [multi_hop, missing], top_k=2)
+        self.assertFalse(traces[0]['hit1'])
+        self.assertTrue(traces[0]['hit3'])
+        self.assertTrue(traces[0]['context_hit'])
+        self.assertIsNone(traces[1]['hit3'])
+        with self.assertRaises(ValueError):
+            validate(chunks[:1], [multi_hop])
+
+    def test_top_five_keeps_hit3_separate_from_hitk(self):
+        rows = [chunk(str(i), f'unrelated chunk {i}') for i in range(4)]
+        rows.append(chunk('gold', 'Đáp án nằm ở vị trí thứ năm.', page=5))
+        question = {
+            'id': 'rank5', 'split': 'dev', 'question': 'Câu hỏi về đáp án',
+            'expected_answer': 'Đáp án', 'gold': [
+                {'source_id': 'doc', 'page': 5, 'evidence': 'Đáp án nằm ở vị trí thứ năm.'}
+            ],
+        }
+
+        class FixedIndex:
+            def search(self, query, *, top_k, filters=None):
+                return rows[:top_k]
+
+        trace = evaluate(FixedIndex(), [question], top_k=5)[0]
+        self.assertFalse(trace['hit3'])
+        self.assertTrue(trace['hitk'])
+        self.assertTrue(trace['context_hit'])
+
     def test_convert_day6_and_preserve_filter(self):
         raw_chunk = {'chunk_id': 'c1', 'document_id': 'doc', 'source': 'doc.pdf', 'page': 1,
                      'text': 'bảy ngày', 'metadata': {'year': 2025}}
@@ -70,7 +131,7 @@ class BaselineTests(unittest.TestCase):
                            check=True, capture_output=True, text=True)
             summary = json.loads((root/'out/summary.json').read_text())
             self.assertEqual((summary['split'], summary['n'], summary['hit1']), ('dev', 1, 1))
-            self.assertEqual(len(json.loads((root/'out/traces.json').read_text())), 1)
+            self.assertEqual(len(json.loads((root/'out/traces.json').read_text(encoding='utf-8'))), 1)
 
 
 if __name__ == '__main__': unittest.main()

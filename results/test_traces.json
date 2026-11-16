@@ -1,0 +1,1025 @@
+[
+  {
+    "query_id": "Q16",
+    "status": "answered",
+    "answer": "Kiểm tra khả năng định tuyến lưu lượng, điều hướng theo chính sách và hiệu năng của SR-TE trong các kịch bản mạng đa tuyến và khắc phục lỗi. [sr-te-report-2026:44:0]",
+    "citations": [
+      "sr-te-report-2026:44:0"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "Trong Chương 5, mô hình thực nghiệm chủ yếu kiểm tra điều gì?",
+        "filter": {
+          "chapter": "Chương 5: Thiết kế mô hình thực nghiệm"
+        },
+        "results": [
+          {
+            "id": "sr-te-report-2026:44:0",
+            "text": "Báo cáo thực tập tốt nghiệp\n\n33\n\nCHƯƠNG 5: THIẾT KẾ MÔ HÌNH THỰC NGHIỆM SEGMENT\nROUTING\n5.1. Đặt bài toán thực nghiệm và lựa chọn công cụ mô phỏng (EVE-NG)\n5.1.1. Mục tiêu và yêu cầu của bài toán thực nghiệm\nMục tiêu cốt lõi của phần thực nghiệm là chuyển hóa các nền tảng lý thuyết về\nSegment Routing Traffic Engineering đã trình bày ở các chương trước thành một mô\nhình mạng lưới có thể quan sát, đo lường và đánh giá.",
+            "source_id": "sr-te-report-2026",
+            "source": "starter/data/TTTN.Nhóm 3.2 (1).pdf",
+            "page": 44,
+            "metadata": {
+              "page_label": "44",
+              "is_blank": false,
+              "chapter": "Chương 5: Thiết kế mô hình thực nghiệm",
+              "strategy": "by_paragraph"
+            },
+            "score": 0.03278688524590164,
+            "strategy": "rrf"
+          },
+          {
+            "id": "sr-te-report-2026:53:0",
+            "text": "Báo cáo thực tập tốt nghiệp\n\n42\n\nHình 5.5: Chuyển sang chế độ RSVP-TE để so sánh:\n5.4. Xây dựng kịch bản kiểm thử\nĐể đánh giá toàn diện hiệu năng của giải pháp, hai kịch bản kiểm thử cốt lõi được\nxây dựng. Các kịch bản này mô phỏng các tình huống thực tế thường gặp trong việc\nvận hành mạng lõi. 5.4.1.",
+            "source_id": "sr-te-report-2026",
+            "source": "starter/data/TTTN.Nhóm 3.2 (1).pdf",
+            "page": 53,
+            "metadata": {
+              "page_label": "53",
+              "is_blank": false,
+              "chapter": "Chương 5: Thiết kế mô hình thực nghiệm",
+              "strategy": "by_paragraph"
+            },
+            "score": 0.03225806451612903,
+            "strategy": "rrf"
+          },
+          {
+            "id": "sr-te-report-2026:47:2",
+            "text": "Thiết kế sơ đồ hình học mạng\nMô hình thực nghiệm được thiết kế bao gồm một vùng mạng lõi sử dụng giao thức\nđịnh tuyến OSPFv2 làm Underlay, kết hợp với công nghệ Segment Routing.\n\nHình 5.1 : Sơ đồ thiết kế bài lab\nTrong đó:",
+            "source_id": "sr-te-report-2026",
+            "source": "starter/data/TTTN.Nhóm 3.2 (1).pdf",
+            "page": 47,
+            "metadata": {
+              "page_label": "47",
+              "is_blank": false,
+              "chapter": "Chương 5: Thiết kế mô hình thực nghiệm",
+              "strategy": "by_paragraph"
+            },
+            "score": 0.031746031746031744,
+            "strategy": "rrf"
+          },
+          {
+            "id": "sr-te-report-2026:45:4",
+            "text": "Để giải quyết giới hạn này và đảm bảo tính khả thi của mô hình thực nghiệm,\nnhóm sẽ tái sử dụng cấu trúc mặt phẳng điều khiển của RSVP-TE (giao diện Tunnel)\nnhưng thay thế hoàn toàn mặt phẳng dữ liệu (Data Plane) và cơ chế báo hiệu bên dưới\nbằng Segment Routing. Khái niệm lý\nthuyết chuẩn\n(Kiến trúc SR-\nTE)\nThực tế triển khai\ntrên IOS-XE (Mô\nhình Lab)\nGiải thích sự tương đương trong thực\nnghiệm",
+            "source_id": "sr-te-report-2026",
+            "source": "starter/data/TTTN.Nhóm 3.2 (1).pdf",
+            "page": 45,
+            "metadata": {
+              "page_label": "45",
+              "is_blank": false,
+              "chapter": "Chương 5: Thiết kế mô hình thực nghiệm",
+              "strategy": "by_paragraph"
+            },
+            "score": 0.031009615384615385,
+            "strategy": "rrf"
+          },
+          {
+            "id": "sr-te-report-2026:49:0",
+            "text": "Báo cáo thực tập tốt nghiệp\n\n38\n\nbổ nhãn trong bài thực nghiệm được chia làm hai cấp độ để phục vụ cho mục đích nắn\nluồng:\n5.2.3.1. Khối nhãn toàn cục SRGB\nKịch bản kiểm thử sử dụng nhãn cục bộ để ép đường đi, khối nhãn SRGB vẫn bắt\nbuộc phải được khai báo để hệ thống có cơ sở dữ liệu tính toán ban đầu. Trong thực\nnghiệm, dải SRGB được quy hoạch tối ưu trong khoảng từ 16000 đến 16999.",
+            "source_id": "sr-te-report-2026",
+            "source": "starter/data/TTTN.Nhóm 3.2 (1).pdf",
+            "page": 49,
+            "metadata": {
+              "page_label": "49",
+              "is_blank": false,
+              "chapter": "Chương 5: Thiết kế mô hình thực nghiệm",
+              "strategy": "by_paragraph"
+            },
+            "score": 0.031009615384615385,
+            "strategy": "rrf"
+          }
+        ],
+        "context": "[sr-te-report-2026:44:0] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 44]\nBáo cáo thực tập tốt nghiệp\n\n33\n\nCHƯƠNG 5: THIẾT KẾ MÔ HÌNH THỰC NGHIỆM SEGMENT\nROUTING\n5.1. Đặt bài toán thực nghiệm và lựa chọn công cụ mô phỏng (EVE-NG)\n5.1.1. Mục tiêu và yêu cầu của bài toán thực nghiệm\nMục tiêu cốt lõi của phần thực nghiệm là chuyển hóa các nền tảng lý thuyết về\nSegment Routing Traffic Engineering đã trình bày ở các chương trước thành một mô\nhình mạng lưới có thể quan sát, đo lường và đánh giá.\n\n[sr-te-report-2026:53:0] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 53]\nBáo cáo thực tập tốt nghiệp\n\n42\n\nHình 5.5: Chuyển sang chế độ RSVP-TE để so sánh:\n5.4. Xây dựng kịch bản kiểm thử\nĐể đánh giá toàn diện hiệu năng của giải pháp, hai kịch bản kiểm thử cốt lõi được\nxây dựng. Các kịch bản này mô phỏng các tình huống thực tế thường gặp trong việc\nvận hành mạng lõi. 5.4.1.\n\n[sr-te-report-2026:47:2] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 47]\nThiết kế sơ đồ hình học mạng\nMô hình thực nghiệm được thiết kế bao gồm một vùng mạng lõi sử dụng giao thức\nđịnh tuyến OSPFv2 làm Underlay, kết hợp với công nghệ Segment Routing.\n\nHình 5.1 : Sơ đồ thiết kế bài lab\nTrong đó:\n\n[sr-te-report-2026:45:4] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 45]\nĐể giải quyết giới hạn này và đảm bảo tính khả thi của mô hình thực nghiệm,\nnhóm sẽ tái sử dụng cấu trúc mặt phẳng điều khiển của RSVP-TE (giao diện Tunnel)\nnhưng thay thế hoàn toàn mặt phẳng dữ liệu (Data Plane) và cơ chế báo hiệu bên dưới\nbằng Segment Routing. Khái niệm lý\nthuyết chuẩn\n(Kiến trúc SR-\nTE)\nThực tế triển khai\ntrên IOS-XE (Mô\nhình Lab)\nGiải thích sự tương đương trong thực\nnghiệm\n\n[sr-te-report-2026:49:0] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 49]\nBáo cáo thực tập tốt nghiệp\n\n38\n\nbổ nhãn trong bài thực nghiệm được chia làm hai cấp độ để phục vụ cho mục đích nắn\nluồng:\n5.2.3.1. Khối nhãn toàn cục SRGB\nKịch bản kiểm thử sử dụng nhãn cục bộ để ép đường đi, khối nhãn SRGB vẫn bắt\nbuộc phải được khai báo để hệ thống có cơ sở dữ liệu tính toán ban đầu. Trong thực\nnghiệm, dải SRGB được quy hoạch tối ưu trong khoảng từ 16000 đến 16999.",
+        "context_ids": [
+          "sr-te-report-2026:44:0",
+          "sr-te-report-2026:53:0",
+          "sr-te-report-2026:47:2",
+          "sr-te-report-2026:45:4",
+          "sr-te-report-2026:49:0"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "context": "[sr-te-report-2026:44:0] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 44]\nBáo cáo thực tập tốt nghiệp\n\n33\n\nCHƯƠNG 5: THIẾT KẾ MÔ HÌNH THỰC NGHIỆM SEGMENT\nROUTING\n5.1. Đặt bài toán thực nghiệm và lựa chọn công cụ mô phỏng (EVE-NG)\n5.1.1. Mục tiêu và yêu cầu của bài toán thực nghiệm\nMục tiêu cốt lõi của phần thực nghiệm là chuyển hóa các nền tảng lý thuyết về\nSegment Routing Traffic Engineering đã trình bày ở các chương trước thành một mô\nhình mạng lưới có thể quan sát, đo lường và đánh giá.\n\n[sr-te-report-2026:53:0] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 53]\nBáo cáo thực tập tốt nghiệp\n\n42\n\nHình 5.5: Chuyển sang chế độ RSVP-TE để so sánh:\n5.4. Xây dựng kịch bản kiểm thử\nĐể đánh giá toàn diện hiệu năng của giải pháp, hai kịch bản kiểm thử cốt lõi được\nxây dựng. Các kịch bản này mô phỏng các tình huống thực tế thường gặp trong việc\nvận hành mạng lõi. 5.4.1.\n\n[sr-te-report-2026:47:2] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 47]\nThiết kế sơ đồ hình học mạng\nMô hình thực nghiệm được thiết kế bao gồm một vùng mạng lõi sử dụng giao thức\nđịnh tuyến OSPFv2 làm Underlay, kết hợp với công nghệ Segment Routing.\n\nHình 5.1 : Sơ đồ thiết kế bài lab\nTrong đó:\n\n[sr-te-report-2026:45:4] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 45]\nĐể giải quyết giới hạn này và đảm bảo tính khả thi của mô hình thực nghiệm,\nnhóm sẽ tái sử dụng cấu trúc mặt phẳng điều khiển của RSVP-TE (giao diện Tunnel)\nnhưng thay thế hoàn toàn mặt phẳng dữ liệu (Data Plane) và cơ chế báo hiệu bên dưới\nbằng Segment Routing. Khái niệm lý\nthuyết chuẩn\n(Kiến trúc SR-\nTE)\nThực tế triển khai\ntrên IOS-XE (Mô\nhình Lab)\nGiải thích sự tương đương trong thực\nnghiệm\n\n[sr-te-report-2026:49:0] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 49]\nBáo cáo thực tập tốt nghiệp\n\n38\n\nbổ nhãn trong bài thực nghiệm được chia làm hai cấp độ để phục vụ cho mục đích nắn\nluồng:\n5.2.3.1. Khối nhãn toàn cục SRGB\nKịch bản kiểm thử sử dụng nhãn cục bộ để ép đường đi, khối nhãn SRGB vẫn bắt\nbuộc phải được khai báo để hệ thống có cơ sở dữ liệu tính toán ban đầu. Trong thực\nnghiệm, dải SRGB được quy hoạch tối ưu trong khoảng từ 16000 đến 16999.",
+    "context_ids": [
+      "sr-te-report-2026:44:0",
+      "sr-te-report-2026:53:0",
+      "sr-te-report-2026:47:2",
+      "sr-te-report-2026:45:4",
+      "sr-te-report-2026:49:0"
+    ],
+    "search_count": 1,
+    "elapsed_ms": 3.435399999943911
+  },
+  {
+    "query_id": "Q17",
+    "status": "answered",
+    "answer": "Tập trung vào chuyển lưu lượng sang backup path hoặc candidate path dự phòng để giảm thời gian gián đoạn và duy trì dịch vụ. [sr-te-report-2026:59:1]",
+    "citations": [
+      "sr-te-report-2026:59:1"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "Sau khi xuất hiện link failure, báo cáo tập trung vào chiến lược nào để tiếp tục lưu lượng?",
+        "filter": {
+          "chapter": "Chương 6: Đánh giá"
+        },
+        "results": [
+          {
+            "id": "sr-te-report-2026:59:1",
+            "text": "Hình 6.1: Gói tin RSVP PATH/RESV trao đổi liên tục trên tuyến VIP\nPhân tích gói tin bằng công cụ Wireshark trên mạng lõi cho thấy sự xuất hiện dày\nđặc của các bản tin báo hiệu này. Điều này đồng nghĩa với việc Router lõi phải liên tục\ntrích xuất tài nguyên để xử lý và duy trì trạng thái kết nối. 6.1.2. Sự tối ưu của SR-TE\nNgược lại, khi chuyển sang kiến trúc SR -TE, mặt phẳng điều khiển được tối giản\nhoàn toàn.",
+            "source_id": "sr-te-report-2026",
+            "source": "starter/data/TTTN.Nhóm 3.2 (1).pdf",
+            "page": 59,
+            "metadata": {
+              "page_label": "59",
+              "is_blank": false,
+              "chapter": "Chương 6: Đánh giá",
+              "strategy": "by_paragraph"
+            },
+            "score": 0.03177805800756621,
+            "strategy": "rrf"
+          },
+          {
+            "id": "sr-te-report-2026:59:0",
+            "text": "Báo cáo thực tập tốt nghiệp\n\n48\n\nCHƯƠNG 6: THỰC NGHIỆM, ĐÁNH GIÁ KẾT QUẢ VÀ TÁC ĐỘNG\nGIẢI PHÁP\n6.1. Phân tích mặt phẳng điều khiển – Trạng thái nền\n6.1.1. Báo hiệu duy trì hầm của RSVP-TE\nKiến trúc RSVP-TE hoạt động dựa trên cơ chế duy trì trạng thái. Để một đường\nhầm tồn tại, Ingress Router phải liên tục gửi bản tin PATH và chờ các Router dọc\nđường phản hồi bằng bản tin RESV.",
+            "source_id": "sr-te-report-2026",
+            "source": "starter/data/TTTN.Nhóm 3.2 (1).pdf",
+            "page": 59,
+            "metadata": {
+              "page_label": "59",
+              "is_blank": false,
+              "chapter": "Chương 6: Đánh giá",
+              "strategy": "by_paragraph"
+            },
+            "score": 0.031754032258064516,
+            "strategy": "rrf"
+          },
+          {
+            "id": "sr-te-report-2026:64:0",
+            "text": "Báo cáo thực tập tốt nghiệp\n\n53\n\nHình 6.9: Ping SR-TE : mất 5 gói tin khi hội tụ lại\n● So sánh kết quả cho thấy, nhờ không phải chờ đợi quá trình trao đổi bản tin báo\nhiệu thiết lập hầm mới (PATH/RESV) như RSVP -TE, công nghệ SR -TE cho\nthời gian hội tụ nhanh hơn hẳn, giảm thiểu tối đa thời gian gián đoạn dịch vụ\nmạng.",
+            "source_id": "sr-te-report-2026",
+            "source": "starter/data/TTTN.Nhóm 3.2 (1).pdf",
+            "page": 64,
+            "metadata": {
+              "page_label": "64",
+              "is_blank": false,
+              "chapter": "Chương 6: Đánh giá",
+              "strategy": "by_paragraph"
+            },
+            "score": 0.031544957774465976,
+            "strategy": "rrf"
+          },
+          {
+            "id": "sr-te-report-2026:60:0",
+            "text": "Báo cáo thực tập tốt nghiệp\n\n49\n\nHình 6.2: Dò tìm bản tin RSVP trên Wireshark trên đoạn đường VIP\nKết quả bắt gói tin trên cùng liên kết lõi cho thấy mạng hoàn toàn \"im lặng\", không\ncó bất kỳ bản tin báo hiệu hầm nào được sinh ra. Router Ingress tự chủ động tính toán\nđường đi, giải phóng hoàn toàn gánh nặng báo hiệu cho mạng lưới. 6.2.",
+            "source_id": "sr-te-report-2026",
+            "source": "starter/data/TTTN.Nhóm 3.2 (1).pdf",
+            "page": 60,
+            "metadata": {
+              "page_label": "60",
+              "is_blank": false,
+              "chapter": "Chương 6: Đánh giá",
+              "strategy": "by_paragraph"
+            },
+            "score": 0.03128054740957967,
+            "strategy": "rrf"
+          },
+          {
+            "id": "sr-te-report-2026:62:0",
+            "text": "Báo cáo thực tập tốt nghiệp\n\n51\n\ncấp phát nhãn động và duy trì trạng thái từng chặng, SR-TE sử dụng cơ chế định tuyến\nnguồn. Gói tin được CSR2 dán sẵn chuỗi nhãn, giúp các Router lõi chỉ cần đọc nhãn\ntrên cùng để chuyển tiếp mà không cần lưu trạng thái hầm, từ đó tối ưu đáng kể tài\nnguyên thiết bị. 6.3. Phân tích kịch bản sự cố\nMô phỏng sự cố đứt liên kết vật lý trên tuyến đường chính, nhằm đánh giá khả\nnăng tự động phục hồi của mạng lưới. 6.3.1.",
+            "source_id": "sr-te-report-2026",
+            "source": "starter/data/TTTN.Nhóm 3.2 (1).pdf",
+            "page": 62,
+            "metadata": {
+              "page_label": "62",
+              "is_blank": false,
+              "chapter": "Chương 6: Đánh giá",
+              "strategy": "by_paragraph"
+            },
+            "score": 0.03125763125763126,
+            "strategy": "rrf"
+          }
+        ],
+        "context": "[sr-te-report-2026:59:1] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 59]\nHình 6.1: Gói tin RSVP PATH/RESV trao đổi liên tục trên tuyến VIP\nPhân tích gói tin bằng công cụ Wireshark trên mạng lõi cho thấy sự xuất hiện dày\nđặc của các bản tin báo hiệu này. Điều này đồng nghĩa với việc Router lõi phải liên tục\ntrích xuất tài nguyên để xử lý và duy trì trạng thái kết nối. 6.1.2. Sự tối ưu của SR-TE\nNgược lại, khi chuyển sang kiến trúc SR -TE, mặt phẳng điều khiển được tối giản\nhoàn toàn.\n\n[sr-te-report-2026:59:0] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 59]\nBáo cáo thực tập tốt nghiệp\n\n48\n\nCHƯƠNG 6: THỰC NGHIỆM, ĐÁNH GIÁ KẾT QUẢ VÀ TÁC ĐỘNG\nGIẢI PHÁP\n6.1. Phân tích mặt phẳng điều khiển – Trạng thái nền\n6.1.1. Báo hiệu duy trì hầm của RSVP-TE\nKiến trúc RSVP-TE hoạt động dựa trên cơ chế duy trì trạng thái. Để một đường\nhầm tồn tại, Ingress Router phải liên tục gửi bản tin PATH và chờ các Router dọc\nđường phản hồi bằng bản tin RESV.\n\n[sr-te-report-2026:64:0] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 64]\nBáo cáo thực tập tốt nghiệp\n\n53\n\nHình 6.9: Ping SR-TE : mất 5 gói tin khi hội tụ lại\n● So sánh kết quả cho thấy, nhờ không phải chờ đợi quá trình trao đổi bản tin báo\nhiệu thiết lập hầm mới (PATH/RESV) như RSVP -TE, công nghệ SR -TE cho\nthời gian hội tụ nhanh hơn hẳn, giảm thiểu tối đa thời gian gián đoạn dịch vụ\nmạng.\n\n[sr-te-report-2026:60:0] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 60]\nBáo cáo thực tập tốt nghiệp\n\n49\n\nHình 6.2: Dò tìm bản tin RSVP trên Wireshark trên đoạn đường VIP\nKết quả bắt gói tin trên cùng liên kết lõi cho thấy mạng hoàn toàn \"im lặng\", không\ncó bất kỳ bản tin báo hiệu hầm nào được sinh ra. Router Ingress tự chủ động tính toán\nđường đi, giải phóng hoàn toàn gánh nặng báo hiệu cho mạng lưới. 6.2.\n\n[sr-te-report-2026:62:0] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 62]\nBáo cáo thực tập tốt nghiệp\n\n51\n\ncấp phát nhãn động và duy trì trạng thái từng chặng, SR-TE sử dụng cơ chế định tuyến\nnguồn. Gói tin được CSR2 dán sẵn chuỗi nhãn, giúp các Router lõi chỉ cần đọc nhãn\ntrên cùng để chuyển tiếp mà không cần lưu trạng thái hầm, từ đó tối ưu đáng kể tài\nnguyên thiết bị. 6.3. Phân tích kịch bản sự cố\nMô phỏng sự cố đứt liên kết vật lý trên tuyến đường chính, nhằm đánh giá khả\nnăng tự động phục hồi của mạng lưới. 6.3.1.",
+        "context_ids": [
+          "sr-te-report-2026:59:1",
+          "sr-te-report-2026:59:0",
+          "sr-te-report-2026:64:0",
+          "sr-te-report-2026:60:0",
+          "sr-te-report-2026:62:0"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "context": "[sr-te-report-2026:59:1] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 59]\nHình 6.1: Gói tin RSVP PATH/RESV trao đổi liên tục trên tuyến VIP\nPhân tích gói tin bằng công cụ Wireshark trên mạng lõi cho thấy sự xuất hiện dày\nđặc của các bản tin báo hiệu này. Điều này đồng nghĩa với việc Router lõi phải liên tục\ntrích xuất tài nguyên để xử lý và duy trì trạng thái kết nối. 6.1.2. Sự tối ưu của SR-TE\nNgược lại, khi chuyển sang kiến trúc SR -TE, mặt phẳng điều khiển được tối giản\nhoàn toàn.\n\n[sr-te-report-2026:59:0] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 59]\nBáo cáo thực tập tốt nghiệp\n\n48\n\nCHƯƠNG 6: THỰC NGHIỆM, ĐÁNH GIÁ KẾT QUẢ VÀ TÁC ĐỘNG\nGIẢI PHÁP\n6.1. Phân tích mặt phẳng điều khiển – Trạng thái nền\n6.1.1. Báo hiệu duy trì hầm của RSVP-TE\nKiến trúc RSVP-TE hoạt động dựa trên cơ chế duy trì trạng thái. Để một đường\nhầm tồn tại, Ingress Router phải liên tục gửi bản tin PATH và chờ các Router dọc\nđường phản hồi bằng bản tin RESV.\n\n[sr-te-report-2026:64:0] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 64]\nBáo cáo thực tập tốt nghiệp\n\n53\n\nHình 6.9: Ping SR-TE : mất 5 gói tin khi hội tụ lại\n● So sánh kết quả cho thấy, nhờ không phải chờ đợi quá trình trao đổi bản tin báo\nhiệu thiết lập hầm mới (PATH/RESV) như RSVP -TE, công nghệ SR -TE cho\nthời gian hội tụ nhanh hơn hẳn, giảm thiểu tối đa thời gian gián đoạn dịch vụ\nmạng.\n\n[sr-te-report-2026:60:0] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 60]\nBáo cáo thực tập tốt nghiệp\n\n49\n\nHình 6.2: Dò tìm bản tin RSVP trên Wireshark trên đoạn đường VIP\nKết quả bắt gói tin trên cùng liên kết lõi cho thấy mạng hoàn toàn \"im lặng\", không\ncó bất kỳ bản tin báo hiệu hầm nào được sinh ra. Router Ingress tự chủ động tính toán\nđường đi, giải phóng hoàn toàn gánh nặng báo hiệu cho mạng lưới. 6.2.\n\n[sr-te-report-2026:62:0] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 62]\nBáo cáo thực tập tốt nghiệp\n\n51\n\ncấp phát nhãn động và duy trì trạng thái từng chặng, SR-TE sử dụng cơ chế định tuyến\nnguồn. Gói tin được CSR2 dán sẵn chuỗi nhãn, giúp các Router lõi chỉ cần đọc nhãn\ntrên cùng để chuyển tiếp mà không cần lưu trạng thái hầm, từ đó tối ưu đáng kể tài\nnguyên thiết bị. 6.3. Phân tích kịch bản sự cố\nMô phỏng sự cố đứt liên kết vật lý trên tuyến đường chính, nhằm đánh giá khả\nnăng tự động phục hồi của mạng lưới. 6.3.1.",
+    "context_ids": [
+      "sr-te-report-2026:59:1",
+      "sr-te-report-2026:59:0",
+      "sr-te-report-2026:64:0",
+      "sr-te-report-2026:60:0",
+      "sr-te-report-2026:62:0"
+    ],
+    "search_count": 1,
+    "elapsed_ms": 1.9729000005099806
+  },
+  {
+    "query_id": "Q18",
+    "status": "answered",
+    "answer": "Vấn đề cốt lõi là các dịch vụ số hóa đòi hỏi mạng có khả năng điều hướng và tối ưu hóa lưu lượng hiệu quả hơn so với mô hình routing truyền thống. [sr-te-report-2026:13:0]",
+    "citations": [
+      "sr-te-report-2026:13:0"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "Chương 1 của báo cáo đặt ra vấn đề cốt lõi gì?",
+        "filter": {
+          "chapter": "Chương 1: Mở đầu"
+        },
+        "results": [
+          {
+            "id": "sr-te-report-2026:13:0",
+            "text": "Báo cáo thực tập tốt nghiệp\n\n2\n\nCHƯƠNG 1: MỞ ĐẦU\n1.1 Lý do chọn đề tài. Trong kỷ nguyên bùng nổ của các dịch vụ số hóa, điện toán đám mây, Internet vạn\nvật và đặc biệt là mạng 5G, hạ tầng mạng truyền tải đang phải đối mặt với những\nthách thức to lớn về băng thông, độ trễ và khả năng mở rộng. Trong nhiều năm qua,\nkiến trúc MPLS kết hợp với các giao thức kỹ thuật lưu lượng như RSVP-TE hay LDP\nđã hoàn thành tốt vai trò của mình.",
+            "source_id": "sr-te-report-2026",
+            "source": "starter/data/TTTN.Nhóm 3.2 (1).pdf",
+            "page": 13,
+            "metadata": {
+              "page_label": "13",
+              "is_blank": false,
+              "chapter": "Chương 1: Mở đầu",
+              "strategy": "by_paragraph"
+            },
+            "score": 0.03252247488101534,
+            "strategy": "rrf"
+          },
+          {
+            "id": "sr-te-report-2026:13:4",
+            "text": "Mục tiêu nghiên cứu\nĐề tài được thực hiện nhằm hướng tới các mục tiêu cốt lõi sau:\n● Về mặt lý thuyết: Nắm vững bối cảnh ra đời, các khái niệm cốt lõi, kiến trúc\nSR-MPLS và cơ chế hoạt động chuyển tiếp dữ liệu của công nghệ Segment\nRouting.",
+            "source_id": "sr-te-report-2026",
+            "source": "starter/data/TTTN.Nhóm 3.2 (1).pdf",
+            "page": 13,
+            "metadata": {
+              "page_label": "13",
+              "is_blank": false,
+              "chapter": "Chương 1: Mở đầu",
+              "strategy": "by_paragraph"
+            },
+            "score": 0.03252247488101534,
+            "strategy": "rrf"
+          },
+          {
+            "id": "sr-te-report-2026:15:0",
+            "text": "Báo cáo thực tập tốt nghiệp\n\n4\n\n1.5.1. Sơ đồ phân chia trách nhiệm cho 3 thành viên\nSTT Thành viên Nhiệm vụ\n1 Nguyễn Minh Quân\n(Nhóm trưởng)\nQuản lý tiến độ chung, nghiên cứu phần mô phỏng\nChương 5,6; thực hiện xây dựng lab mô phỏng và\ncấu hình. 2 Lý Đình Đức Nghiên cứu viết lý thuyết Chương 2,3; hỗ trợ xây\ndựng kịch bản mô phỏng và thực hiện cấu hình cơ\nbản.",
+            "source_id": "sr-te-report-2026",
+            "source": "starter/data/TTTN.Nhóm 3.2 (1).pdf",
+            "page": 15,
+            "metadata": {
+              "page_label": "15",
+              "is_blank": false,
+              "chapter": "Chương 1: Mở đầu",
+              "strategy": "by_paragraph"
+            },
+            "score": 0.031746031746031744,
+            "strategy": "rrf"
+          },
+          {
+            "id": "sr-te-report-2026:15:1",
+            "text": "3 Hoàng Hải Triều Nghiên cứu viết lý thuyết Chương 1,4;thực hiện\nlàm slide tiến độ báo cáo; hỗ trợ thực hiện cấu hình\nlab mô phỏng. 1.5.2. Công cụ và quy trình phối hợp nhóm\nNhóm thống nhất sử dụng các công cụ và quy trình sau để tối ưu hóa hiệu quả làm\nviệc:\n● Công cụ làm việc chung:\n- Soạn thảo báo cáo: Sử dụng Google Docs để viết báo cáo chung.",
+            "source_id": "sr-te-report-2026",
+            "source": "starter/data/TTTN.Nhóm 3.2 (1).pdf",
+            "page": 15,
+            "metadata": {
+              "page_label": "15",
+              "is_blank": false,
+              "chapter": "Chương 1: Mở đầu",
+              "strategy": "by_paragraph"
+            },
+            "score": 0.03125,
+            "strategy": "rrf"
+          },
+          {
+            "id": "sr-te-report-2026:13:3",
+            "text": "Nhận thấy tầm quan trọng và xu hướng dịch chuyển tất yếu của các nhà cung cấp\ndịch vụ mạng ISP trên toàn cầu sang công nghệ Segment Routing, nhóm chúng tôi đã\nquyết định chọn đề tài: \" THIẾT KẾ VÀ ĐÁNH GIÁ KIẾN TRÚC SEGMENT\nROUTING TRAFFIC ENGINEERING \". Đề tài không chỉ giúp củng cố nền tảng lý\nthuyết mà còn mang lại kỹ năng thực hành cấu hình, đánh giá mạng thực tế. 1.2.",
+            "source_id": "sr-te-report-2026",
+            "source": "starter/data/TTTN.Nhóm 3.2 (1).pdf",
+            "page": 13,
+            "metadata": {
+              "page_label": "13",
+              "is_blank": false,
+              "chapter": "Chương 1: Mở đầu",
+              "strategy": "by_paragraph"
+            },
+            "score": 0.030536130536130537,
+            "strategy": "rrf"
+          }
+        ],
+        "context": "[sr-te-report-2026:13:0] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 13]\nBáo cáo thực tập tốt nghiệp\n\n2\n\nCHƯƠNG 1: MỞ ĐẦU\n1.1 Lý do chọn đề tài. Trong kỷ nguyên bùng nổ của các dịch vụ số hóa, điện toán đám mây, Internet vạn\nvật và đặc biệt là mạng 5G, hạ tầng mạng truyền tải đang phải đối mặt với những\nthách thức to lớn về băng thông, độ trễ và khả năng mở rộng. Trong nhiều năm qua,\nkiến trúc MPLS kết hợp với các giao thức kỹ thuật lưu lượng như RSVP-TE hay LDP\nđã hoàn thành tốt vai trò của mình.\n\n[sr-te-report-2026:13:4] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 13]\nMục tiêu nghiên cứu\nĐề tài được thực hiện nhằm hướng tới các mục tiêu cốt lõi sau:\n● Về mặt lý thuyết: Nắm vững bối cảnh ra đời, các khái niệm cốt lõi, kiến trúc\nSR-MPLS và cơ chế hoạt động chuyển tiếp dữ liệu của công nghệ Segment\nRouting.\n\n[sr-te-report-2026:15:0] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 15]\nBáo cáo thực tập tốt nghiệp\n\n4\n\n1.5.1. Sơ đồ phân chia trách nhiệm cho 3 thành viên\nSTT Thành viên Nhiệm vụ\n1 Nguyễn Minh Quân\n(Nhóm trưởng)\nQuản lý tiến độ chung, nghiên cứu phần mô phỏng\nChương 5,6; thực hiện xây dựng lab mô phỏng và\ncấu hình. 2 Lý Đình Đức Nghiên cứu viết lý thuyết Chương 2,3; hỗ trợ xây\ndựng kịch bản mô phỏng và thực hiện cấu hình cơ\nbản.\n\n[sr-te-report-2026:15:1] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 15]\n3 Hoàng Hải Triều Nghiên cứu viết lý thuyết Chương 1,4;thực hiện\nlàm slide tiến độ báo cáo; hỗ trợ thực hiện cấu hình\nlab mô phỏng. 1.5.2. Công cụ và quy trình phối hợp nhóm\nNhóm thống nhất sử dụng các công cụ và quy trình sau để tối ưu hóa hiệu quả làm\nviệc:\n● Công cụ làm việc chung:\n- Soạn thảo báo cáo: Sử dụng Google Docs để viết báo cáo chung.\n\n[sr-te-report-2026:13:3] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 13]\nNhận thấy tầm quan trọng và xu hướng dịch chuyển tất yếu của các nhà cung cấp\ndịch vụ mạng ISP trên toàn cầu sang công nghệ Segment Routing, nhóm chúng tôi đã\nquyết định chọn đề tài: \" THIẾT KẾ VÀ ĐÁNH GIÁ KIẾN TRÚC SEGMENT\nROUTING TRAFFIC ENGINEERING \". Đề tài không chỉ giúp củng cố nền tảng lý\nthuyết mà còn mang lại kỹ năng thực hành cấu hình, đánh giá mạng thực tế. 1.2.",
+        "context_ids": [
+          "sr-te-report-2026:13:0",
+          "sr-te-report-2026:13:4",
+          "sr-te-report-2026:15:0",
+          "sr-te-report-2026:15:1",
+          "sr-te-report-2026:13:3"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "context": "[sr-te-report-2026:13:0] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 13]\nBáo cáo thực tập tốt nghiệp\n\n2\n\nCHƯƠNG 1: MỞ ĐẦU\n1.1 Lý do chọn đề tài. Trong kỷ nguyên bùng nổ của các dịch vụ số hóa, điện toán đám mây, Internet vạn\nvật và đặc biệt là mạng 5G, hạ tầng mạng truyền tải đang phải đối mặt với những\nthách thức to lớn về băng thông, độ trễ và khả năng mở rộng. Trong nhiều năm qua,\nkiến trúc MPLS kết hợp với các giao thức kỹ thuật lưu lượng như RSVP-TE hay LDP\nđã hoàn thành tốt vai trò của mình.\n\n[sr-te-report-2026:13:4] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 13]\nMục tiêu nghiên cứu\nĐề tài được thực hiện nhằm hướng tới các mục tiêu cốt lõi sau:\n● Về mặt lý thuyết: Nắm vững bối cảnh ra đời, các khái niệm cốt lõi, kiến trúc\nSR-MPLS và cơ chế hoạt động chuyển tiếp dữ liệu của công nghệ Segment\nRouting.\n\n[sr-te-report-2026:15:0] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 15]\nBáo cáo thực tập tốt nghiệp\n\n4\n\n1.5.1. Sơ đồ phân chia trách nhiệm cho 3 thành viên\nSTT Thành viên Nhiệm vụ\n1 Nguyễn Minh Quân\n(Nhóm trưởng)\nQuản lý tiến độ chung, nghiên cứu phần mô phỏng\nChương 5,6; thực hiện xây dựng lab mô phỏng và\ncấu hình. 2 Lý Đình Đức Nghiên cứu viết lý thuyết Chương 2,3; hỗ trợ xây\ndựng kịch bản mô phỏng và thực hiện cấu hình cơ\nbản.\n\n[sr-te-report-2026:15:1] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 15]\n3 Hoàng Hải Triều Nghiên cứu viết lý thuyết Chương 1,4;thực hiện\nlàm slide tiến độ báo cáo; hỗ trợ thực hiện cấu hình\nlab mô phỏng. 1.5.2. Công cụ và quy trình phối hợp nhóm\nNhóm thống nhất sử dụng các công cụ và quy trình sau để tối ưu hóa hiệu quả làm\nviệc:\n● Công cụ làm việc chung:\n- Soạn thảo báo cáo: Sử dụng Google Docs để viết báo cáo chung.\n\n[sr-te-report-2026:13:3] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 13]\nNhận thấy tầm quan trọng và xu hướng dịch chuyển tất yếu của các nhà cung cấp\ndịch vụ mạng ISP trên toàn cầu sang công nghệ Segment Routing, nhóm chúng tôi đã\nquyết định chọn đề tài: \" THIẾT KẾ VÀ ĐÁNH GIÁ KIẾN TRÚC SEGMENT\nROUTING TRAFFIC ENGINEERING \". Đề tài không chỉ giúp củng cố nền tảng lý\nthuyết mà còn mang lại kỹ năng thực hành cấu hình, đánh giá mạng thực tế. 1.2.",
+    "context_ids": [
+      "sr-te-report-2026:13:0",
+      "sr-te-report-2026:13:4",
+      "sr-te-report-2026:15:0",
+      "sr-te-report-2026:15:1",
+      "sr-te-report-2026:13:3"
+    ],
+    "search_count": 1,
+    "elapsed_ms": 1.3724999998885323
+  },
+  {
+    "query_id": "Q19",
+    "status": "answered",
+    "answer": "Bằng cách xây dựng và thực thi danh sách segment, từ đó xác định các nhánh / tuyến đường ưu tiên dựa trên mục tiêu QoS, hành lang mạng hoặc kịch bản dự phòng. [sr-te-report-2026:34:2]",
+    "citations": [
+      "sr-te-report-2026:34:2"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "Segment Routing giúp điều hướng lưu lượng theo chính sách bằng cách nào?",
+        "filter": {
+          "chapter": "Chương 4: Tính năng và ứng dụng của SR"
+        },
+        "results": [
+          {
+            "id": "sr-te-report-2026:34:2",
+            "text": "Mô phỏng định danh và đường dẫn của một SR-TE Policy trên sơ đồ mạng\nTrong ví dụ này minh họa trực quan cách một chính sách kỹ thuật lưu lượng SR\nPolicy được định nghĩa và áp dụng tại một nút mạng cụ thể để điều hướng luồng dữ\nliệu. Cụ thể:\n- Khởi tạo tại Head -end: Nút mạng số 1 đóng vai trò là Head -end router, nơi\nquản trị viên khởi tạo và áp dụng chính sách điều hướng lưu lượng.",
+            "source_id": "sr-te-report-2026",
+            "source": "starter/data/TTTN.Nhóm 3.2 (1).pdf",
+            "page": 34,
+            "metadata": {
+              "page_label": "34",
+              "is_blank": false,
+              "chapter": "Chương 4: Tính năng và ứng dụng của SR",
+              "strategy": "by_paragraph"
+            },
+            "score": 0.03278688524590164,
+            "strategy": "rrf"
+          },
+          {
+            "id": "sr-te-report-2026:33:0",
+            "text": "Báo cáo thực tập tốt nghiệp\n\n22\n\nCHƯƠNG 4: TÍNH NĂNG VÀ ỨNG DỤNG CỦA SR\n4.1. Tính năng điều hướng lưu lượng nâng cao (SR-TE Policy). Trong các mạng truyền thống, việc điều hướng lưu lượng đi theo một đường dẫn\nkhông phải là đường ngắn nhất đòi hỏi phải thiết lập các đường hầm phức tạp thông\nqua RSVP-TE. Với Segment Routing, việc này được thực hiện một cách tự nhiên và\nmở rộng tốt hơn thông qua khái niệm SR-TE Policy. 4.1.1.",
+            "source_id": "sr-te-report-2026",
+            "source": "starter/data/TTTN.Nhóm 3.2 (1).pdf",
+            "page": 33,
+            "metadata": {
+              "page_label": "33",
+              "is_blank": false,
+              "chapter": "Chương 4: Tính năng và ứng dụng của SR",
+              "strategy": "by_paragraph"
+            },
+            "score": 0.03225806451612903,
+            "strategy": "rrf"
+          },
+          {
+            "id": "sr-te-report-2026:35:3",
+            "text": "Điều\nhướng\ntự động\nbằng\nBGP\nTận dụng thuộc tính BGP Color\nExtended Community. Khi Head-end\nnhận được bản tin BGP mang thuộc\ntính Color và dải IP đích khớp với\nđịnh danh của một Policy đang có\nsẵn, lưu lượng sẽ tự động được bẻ lái\nvào danh sách phân đoạn đó. Là kịch bản cấu hình chính trong\ncác bài thực nghiệm. Cho phép\ntrực tiếp quan sát quá trình hệ\nthống tự động bẻ lái luồng dữ liệu\nđộng mà không cần can thiệp định\nkỳ bằng tay. Nhãn\nliên kết",
+            "source_id": "sr-te-report-2026",
+            "source": "starter/data/TTTN.Nhóm 3.2 (1).pdf",
+            "page": 35,
+            "metadata": {
+              "page_label": "35",
+              "is_blank": false,
+              "chapter": "Chương 4: Tính năng và ứng dụng của SR",
+              "strategy": "by_paragraph"
+            },
+            "score": 0.03149801587301587,
+            "strategy": "rrf"
+          },
+          {
+            "id": "sr-te-report-2026:36:0",
+            "text": "Báo cáo thực tập tốt nghiệp\n\n25\n\ndanh sách nhãn lộ trình của policy\nvào. Bảng 1: Các cơ chế điều hướng lưu lượng trong SR-TE\n4.1.3. Khả năng tối ưu hóa tài nguyên mạng toàn cục\nĐiểm khác biệt cốt lõi mang lại giá trị cao nhất cho SR-TE Policy so với các công\nnghệ kỹ thuật lưu lượng truyền thống như RSVP -TE chính là cơ chế hoạt động phi\ntrạng thái tại mạng lõi.",
+            "source_id": "sr-te-report-2026",
+            "source": "starter/data/TTTN.Nhóm 3.2 (1).pdf",
+            "page": 36,
+            "metadata": {
+              "page_label": "36",
+              "is_blank": false,
+              "chapter": "Chương 4: Tính năng và ứng dụng của SR",
+              "strategy": "by_paragraph"
+            },
+            "score": 0.030776515151515152,
+            "strategy": "rrf"
+          },
+          {
+            "id": "sr-te-report-2026:35:2",
+            "text": "Cơ chế\nSteering\nNguyên lý hoạt động Ứng dụng trong thực nghiệm mô\nphỏng\nĐiều\nhướng\nthủ\ncông\n\nSử dụng tuyến đường tĩnh hoặc định\ntuyến theo chính sách để ép cứng lưu\nlượng có IP đích cụ thể đi thẳng vào\ngiao diện ảo của SR -TE Policy thay\nvì bảng định tuyến thông thường. Phù hợp cho giai đoạn đầu của bài\nLab để kiểm thử tính hợp lệ của\nđường dẫn; xác minh cấu hình các\nNode-SID/Adj-SID đã thông suốt\nhay chưa.",
+            "source_id": "sr-te-report-2026",
+            "source": "starter/data/TTTN.Nhóm 3.2 (1).pdf",
+            "page": 35,
+            "metadata": {
+              "page_label": "35",
+              "is_blank": false,
+              "chapter": "Chương 4: Tính năng và ứng dụng của SR",
+              "strategy": "by_paragraph"
+            },
+            "score": 0.030536130536130537,
+            "strategy": "rrf"
+          }
+        ],
+        "context": "[sr-te-report-2026:34:2] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 34]\nMô phỏng định danh và đường dẫn của một SR-TE Policy trên sơ đồ mạng\nTrong ví dụ này minh họa trực quan cách một chính sách kỹ thuật lưu lượng SR\nPolicy được định nghĩa và áp dụng tại một nút mạng cụ thể để điều hướng luồng dữ\nliệu. Cụ thể:\n- Khởi tạo tại Head -end: Nút mạng số 1 đóng vai trò là Head -end router, nơi\nquản trị viên khởi tạo và áp dụng chính sách điều hướng lưu lượng.\n\n[sr-te-report-2026:33:0] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 33]\nBáo cáo thực tập tốt nghiệp\n\n22\n\nCHƯƠNG 4: TÍNH NĂNG VÀ ỨNG DỤNG CỦA SR\n4.1. Tính năng điều hướng lưu lượng nâng cao (SR-TE Policy). Trong các mạng truyền thống, việc điều hướng lưu lượng đi theo một đường dẫn\nkhông phải là đường ngắn nhất đòi hỏi phải thiết lập các đường hầm phức tạp thông\nqua RSVP-TE. Với Segment Routing, việc này được thực hiện một cách tự nhiên và\nmở rộng tốt hơn thông qua khái niệm SR-TE Policy. 4.1.1.\n\n[sr-te-report-2026:35:3] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 35]\nĐiều\nhướng\ntự động\nbằng\nBGP\nTận dụng thuộc tính BGP Color\nExtended Community. Khi Head-end\nnhận được bản tin BGP mang thuộc\ntính Color và dải IP đích khớp với\nđịnh danh của một Policy đang có\nsẵn, lưu lượng sẽ tự động được bẻ lái\nvào danh sách phân đoạn đó. Là kịch bản cấu hình chính trong\ncác bài thực nghiệm. Cho phép\ntrực tiếp quan sát quá trình hệ\nthống tự động bẻ lái luồng dữ liệu\nđộng mà không cần can thiệp định\nkỳ bằng tay. Nhãn\nliên kết\n\n[sr-te-report-2026:36:0] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 36]\nBáo cáo thực tập tốt nghiệp\n\n25\n\ndanh sách nhãn lộ trình của policy\nvào. Bảng 1: Các cơ chế điều hướng lưu lượng trong SR-TE\n4.1.3. Khả năng tối ưu hóa tài nguyên mạng toàn cục\nĐiểm khác biệt cốt lõi mang lại giá trị cao nhất cho SR-TE Policy so với các công\nnghệ kỹ thuật lưu lượng truyền thống như RSVP -TE chính là cơ chế hoạt động phi\ntrạng thái tại mạng lõi.\n\n[sr-te-report-2026:35:2] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 35]\nCơ chế\nSteering\nNguyên lý hoạt động Ứng dụng trong thực nghiệm mô\nphỏng\nĐiều\nhướng\nthủ\ncông\n\nSử dụng tuyến đường tĩnh hoặc định\ntuyến theo chính sách để ép cứng lưu\nlượng có IP đích cụ thể đi thẳng vào\ngiao diện ảo của SR -TE Policy thay\nvì bảng định tuyến thông thường. Phù hợp cho giai đoạn đầu của bài\nLab để kiểm thử tính hợp lệ của\nđường dẫn; xác minh cấu hình các\nNode-SID/Adj-SID đã thông suốt\nhay chưa.",
+        "context_ids": [
+          "sr-te-report-2026:34:2",
+          "sr-te-report-2026:33:0",
+          "sr-te-report-2026:35:3",
+          "sr-te-report-2026:36:0",
+          "sr-te-report-2026:35:2"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "context": "[sr-te-report-2026:34:2] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 34]\nMô phỏng định danh và đường dẫn của một SR-TE Policy trên sơ đồ mạng\nTrong ví dụ này minh họa trực quan cách một chính sách kỹ thuật lưu lượng SR\nPolicy được định nghĩa và áp dụng tại một nút mạng cụ thể để điều hướng luồng dữ\nliệu. Cụ thể:\n- Khởi tạo tại Head -end: Nút mạng số 1 đóng vai trò là Head -end router, nơi\nquản trị viên khởi tạo và áp dụng chính sách điều hướng lưu lượng.\n\n[sr-te-report-2026:33:0] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 33]\nBáo cáo thực tập tốt nghiệp\n\n22\n\nCHƯƠNG 4: TÍNH NĂNG VÀ ỨNG DỤNG CỦA SR\n4.1. Tính năng điều hướng lưu lượng nâng cao (SR-TE Policy). Trong các mạng truyền thống, việc điều hướng lưu lượng đi theo một đường dẫn\nkhông phải là đường ngắn nhất đòi hỏi phải thiết lập các đường hầm phức tạp thông\nqua RSVP-TE. Với Segment Routing, việc này được thực hiện một cách tự nhiên và\nmở rộng tốt hơn thông qua khái niệm SR-TE Policy. 4.1.1.\n\n[sr-te-report-2026:35:3] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 35]\nĐiều\nhướng\ntự động\nbằng\nBGP\nTận dụng thuộc tính BGP Color\nExtended Community. Khi Head-end\nnhận được bản tin BGP mang thuộc\ntính Color và dải IP đích khớp với\nđịnh danh của một Policy đang có\nsẵn, lưu lượng sẽ tự động được bẻ lái\nvào danh sách phân đoạn đó. Là kịch bản cấu hình chính trong\ncác bài thực nghiệm. Cho phép\ntrực tiếp quan sát quá trình hệ\nthống tự động bẻ lái luồng dữ liệu\nđộng mà không cần can thiệp định\nkỳ bằng tay. Nhãn\nliên kết\n\n[sr-te-report-2026:36:0] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 36]\nBáo cáo thực tập tốt nghiệp\n\n25\n\ndanh sách nhãn lộ trình của policy\nvào. Bảng 1: Các cơ chế điều hướng lưu lượng trong SR-TE\n4.1.3. Khả năng tối ưu hóa tài nguyên mạng toàn cục\nĐiểm khác biệt cốt lõi mang lại giá trị cao nhất cho SR-TE Policy so với các công\nnghệ kỹ thuật lưu lượng truyền thống như RSVP -TE chính là cơ chế hoạt động phi\ntrạng thái tại mạng lõi.\n\n[sr-te-report-2026:35:2] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 35]\nCơ chế\nSteering\nNguyên lý hoạt động Ứng dụng trong thực nghiệm mô\nphỏng\nĐiều\nhướng\nthủ\ncông\n\nSử dụng tuyến đường tĩnh hoặc định\ntuyến theo chính sách để ép cứng lưu\nlượng có IP đích cụ thể đi thẳng vào\ngiao diện ảo của SR -TE Policy thay\nvì bảng định tuyến thông thường. Phù hợp cho giai đoạn đầu của bài\nLab để kiểm thử tính hợp lệ của\nđường dẫn; xác minh cấu hình các\nNode-SID/Adj-SID đã thông suốt\nhay chưa.",
+    "context_ids": [
+      "sr-te-report-2026:34:2",
+      "sr-te-report-2026:33:0",
+      "sr-te-report-2026:35:3",
+      "sr-te-report-2026:36:0",
+      "sr-te-report-2026:35:2"
+    ],
+    "search_count": 1,
+    "elapsed_ms": 3.450400000474474
+  },
+  {
+    "query_id": "Q20",
+    "status": "answered",
+    "answer": "Chủ yếu xem xét triển khai và chuyển tiếp định tuyến theo segment, bao gồm cách SID và hành vi forwarding được tích hợp vào kiến trúc mạng. [sr-te-report-2026:28:0]",
+    "citations": [
+      "sr-te-report-2026:28:0"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "Chương 3 chủ yếu xem xét phần nào của kiến trúc SR?",
+        "filter": {
+          "chapter": "Chương 3: Kiến trúc triển khai của SR"
+        },
+        "results": [
+          {
+            "id": "sr-te-report-2026:28:0",
+            "text": "Báo cáo thực tập tốt nghiệp\n\n17\n\nCHƯƠNG 3: KIẾN TRÚC TRIỂN KHAI CỦA SR\n3.1. Kiến trúc triển khai SR-MPLS. SR-MPLS là phương thức triển khai Segment Routing trên hạ tầng MPLS hiện có.",
+            "source_id": "sr-te-report-2026",
+            "source": "starter/data/TTTN.Nhóm 3.2 (1).pdf",
+            "page": 28,
+            "metadata": {
+              "page_label": "28",
+              "is_blank": false,
+              "chapter": "Chương 3: Kiến trúc triển khai của SR",
+              "strategy": "by_paragraph"
+            },
+            "score": 0.03278688524590164,
+            "strategy": "rrf"
+          },
+          {
+            "id": "sr-te-report-2026:28:5",
+            "text": "Kiến trúc tổng thể của SR-MPLS: Một miền SR-MPLS thường bao gồm ba loại router:\na) Ingress Router: Là router biên đầu vào của miền SR-MPLS. Đây là nơi:",
+            "source_id": "sr-te-report-2026",
+            "source": "starter/data/TTTN.Nhóm 3.2 (1).pdf",
+            "page": 28,
+            "metadata": {
+              "page_label": "28",
+              "is_blank": false,
+              "chapter": "Chương 3: Kiến trúc triển khai của SR",
+              "strategy": "by_paragraph"
+            },
+            "score": 0.03200204813108039,
+            "strategy": "rrf"
+          },
+          {
+            "id": "sr-te-report-2026:31:1",
+            "text": "○ Router thực hiện POP nhãn Adj-SID đó ra khỏi chồng nhãn. ○ Ngay lập tức, gói tin bị ép buộc đẩy ra đúng giao diện vật lý tương ứng\nvới liên kết Adj-SID mà không tra cứu đường đi IGP. 3.2. Ưu, nhược điểm của kiến trúc SR-MPLS. Segment Routing hiện nay được triển khai chủ yếu theo hai mô hình là Segment\nRouting over MPLS (SR-MPLS) và Segment Routing over IPv6 (SRv6).",
+            "source_id": "sr-te-report-2026",
+            "source": "starter/data/TTTN.Nhóm 3.2 (1).pdf",
+            "page": 31,
+            "metadata": {
+              "page_label": "31",
+              "is_blank": false,
+              "chapter": "Chương 3: Kiến trúc triển khai của SR",
+              "strategy": "by_paragraph"
+            },
+            "score": 0.031754032258064516,
+            "strategy": "rrf"
+          },
+          {
+            "id": "sr-te-report-2026:28:3",
+            "text": "● Data Plane: Chuyển tiếp gói tin bằng cách xử lý ngăn xếp nhãn MPLS tương\nứng với danh sách SID. 3.1.1. Khái niệm SR-MPLS:\nSR-MPLS là giải pháp triển khai công nghệ Segment Routing trực tiếp trên mặt\nphẳng dữ liệu của mạng MPLS hiện hữu. ● Bản chất: SR-MPLS kế thừa hoàn toàn cơ chế chuyển mạch nhãn và cấu trúc\nphần cứng của MPLS mà không đòi hỏi phải thay đổi hay nâng cấp hạ tầng thiết\nbị lõi.",
+            "source_id": "sr-te-report-2026",
+            "source": "starter/data/TTTN.Nhóm 3.2 (1).pdf",
+            "page": 28,
+            "metadata": {
+              "page_label": "28",
+              "is_blank": false,
+              "chapter": "Chương 3: Kiến trúc triển khai của SR",
+              "strategy": "by_paragraph"
+            },
+            "score": 0.03125763125763126,
+            "strategy": "rrf"
+          },
+          {
+            "id": "sr-te-report-2026:28:2",
+            "text": "Các router trong miền\nSR-MPLS không cần duy trì trạng thái của từng đường hầm, mà chỉ cần xây dựng bảng\nánh xạ giữa SID và nhãn MPLS. Điều này giúp giảm số lượng giao thức cần triển khai,\nđơn giản hóa cấu hình và nâng cao khả năng mở rộng của hệ thống. Kiến trúc SR-MPLS gồm ba thành phần chính:\n● Control Plane: Khám phá topo mạng, quảng bá SID và xây dựng bảng chuyển\ntiếp. ● Label Mapping: Ánh xạ SID thành nhãn MPLS dựa trên SRGB hoặc SRLB.",
+            "source_id": "sr-te-report-2026",
+            "source": "starter/data/TTTN.Nhóm 3.2 (1).pdf",
+            "page": 28,
+            "metadata": {
+              "page_label": "28",
+              "is_blank": false,
+              "chapter": "Chương 3: Kiến trúc triển khai của SR",
+              "strategy": "by_paragraph"
+            },
+            "score": 0.030536130536130537,
+            "strategy": "rrf"
+          }
+        ],
+        "context": "[sr-te-report-2026:28:0] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 28]\nBáo cáo thực tập tốt nghiệp\n\n17\n\nCHƯƠNG 3: KIẾN TRÚC TRIỂN KHAI CỦA SR\n3.1. Kiến trúc triển khai SR-MPLS. SR-MPLS là phương thức triển khai Segment Routing trên hạ tầng MPLS hiện có.\n\n[sr-te-report-2026:28:5] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 28]\nKiến trúc tổng thể của SR-MPLS: Một miền SR-MPLS thường bao gồm ba loại router:\na) Ingress Router: Là router biên đầu vào của miền SR-MPLS. Đây là nơi:\n\n[sr-te-report-2026:31:1] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 31]\n○ Router thực hiện POP nhãn Adj-SID đó ra khỏi chồng nhãn. ○ Ngay lập tức, gói tin bị ép buộc đẩy ra đúng giao diện vật lý tương ứng\nvới liên kết Adj-SID mà không tra cứu đường đi IGP. 3.2. Ưu, nhược điểm của kiến trúc SR-MPLS. Segment Routing hiện nay được triển khai chủ yếu theo hai mô hình là Segment\nRouting over MPLS (SR-MPLS) và Segment Routing over IPv6 (SRv6).\n\n[sr-te-report-2026:28:3] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 28]\n● Data Plane: Chuyển tiếp gói tin bằng cách xử lý ngăn xếp nhãn MPLS tương\nứng với danh sách SID. 3.1.1. Khái niệm SR-MPLS:\nSR-MPLS là giải pháp triển khai công nghệ Segment Routing trực tiếp trên mặt\nphẳng dữ liệu của mạng MPLS hiện hữu. ● Bản chất: SR-MPLS kế thừa hoàn toàn cơ chế chuyển mạch nhãn và cấu trúc\nphần cứng của MPLS mà không đòi hỏi phải thay đổi hay nâng cấp hạ tầng thiết\nbị lõi.\n\n[sr-te-report-2026:28:2] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 28]\nCác router trong miền\nSR-MPLS không cần duy trì trạng thái của từng đường hầm, mà chỉ cần xây dựng bảng\nánh xạ giữa SID và nhãn MPLS. Điều này giúp giảm số lượng giao thức cần triển khai,\nđơn giản hóa cấu hình và nâng cao khả năng mở rộng của hệ thống. Kiến trúc SR-MPLS gồm ba thành phần chính:\n● Control Plane: Khám phá topo mạng, quảng bá SID và xây dựng bảng chuyển\ntiếp. ● Label Mapping: Ánh xạ SID thành nhãn MPLS dựa trên SRGB hoặc SRLB.",
+        "context_ids": [
+          "sr-te-report-2026:28:0",
+          "sr-te-report-2026:28:5",
+          "sr-te-report-2026:31:1",
+          "sr-te-report-2026:28:3",
+          "sr-te-report-2026:28:2"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "context": "[sr-te-report-2026:28:0] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 28]\nBáo cáo thực tập tốt nghiệp\n\n17\n\nCHƯƠNG 3: KIẾN TRÚC TRIỂN KHAI CỦA SR\n3.1. Kiến trúc triển khai SR-MPLS. SR-MPLS là phương thức triển khai Segment Routing trên hạ tầng MPLS hiện có.\n\n[sr-te-report-2026:28:5] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 28]\nKiến trúc tổng thể của SR-MPLS: Một miền SR-MPLS thường bao gồm ba loại router:\na) Ingress Router: Là router biên đầu vào của miền SR-MPLS. Đây là nơi:\n\n[sr-te-report-2026:31:1] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 31]\n○ Router thực hiện POP nhãn Adj-SID đó ra khỏi chồng nhãn. ○ Ngay lập tức, gói tin bị ép buộc đẩy ra đúng giao diện vật lý tương ứng\nvới liên kết Adj-SID mà không tra cứu đường đi IGP. 3.2. Ưu, nhược điểm của kiến trúc SR-MPLS. Segment Routing hiện nay được triển khai chủ yếu theo hai mô hình là Segment\nRouting over MPLS (SR-MPLS) và Segment Routing over IPv6 (SRv6).\n\n[sr-te-report-2026:28:3] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 28]\n● Data Plane: Chuyển tiếp gói tin bằng cách xử lý ngăn xếp nhãn MPLS tương\nứng với danh sách SID. 3.1.1. Khái niệm SR-MPLS:\nSR-MPLS là giải pháp triển khai công nghệ Segment Routing trực tiếp trên mặt\nphẳng dữ liệu của mạng MPLS hiện hữu. ● Bản chất: SR-MPLS kế thừa hoàn toàn cơ chế chuyển mạch nhãn và cấu trúc\nphần cứng của MPLS mà không đòi hỏi phải thay đổi hay nâng cấp hạ tầng thiết\nbị lõi.\n\n[sr-te-report-2026:28:2] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 28]\nCác router trong miền\nSR-MPLS không cần duy trì trạng thái của từng đường hầm, mà chỉ cần xây dựng bảng\nánh xạ giữa SID và nhãn MPLS. Điều này giúp giảm số lượng giao thức cần triển khai,\nđơn giản hóa cấu hình và nâng cao khả năng mở rộng của hệ thống. Kiến trúc SR-MPLS gồm ba thành phần chính:\n● Control Plane: Khám phá topo mạng, quảng bá SID và xây dựng bảng chuyển\ntiếp. ● Label Mapping: Ánh xạ SID thành nhãn MPLS dựa trên SRGB hoặc SRLB.",
+    "context_ids": [
+      "sr-te-report-2026:28:0",
+      "sr-te-report-2026:28:5",
+      "sr-te-report-2026:31:1",
+      "sr-te-report-2026:28:3",
+      "sr-te-report-2026:28:2"
+    ],
+    "search_count": 1,
+    "elapsed_ms": 1.854799999819079
+  },
+  {
+    "query_id": "Q22",
+    "status": "answered",
+    "answer": "Báo cáo xem xét ưu điểm về xử lý và độ tin cậy trong phần so sánh hiệu năng SR-TE với RSVP-TE. [sr-te-report-2026:59:1]",
+    "citations": [
+      "sr-te-report-2026:59:1"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "Khi đối chiếu SR-TE với RSVP-TE, báo cáo nêu xử lý và độ tin cậy là các tiêu chí xem xét nào?",
+        "filter": {
+          "chapter": "Chương 6: Đánh giá"
+        },
+        "results": [
+          {
+            "id": "sr-te-report-2026:59:1",
+            "text": "Hình 6.1: Gói tin RSVP PATH/RESV trao đổi liên tục trên tuyến VIP\nPhân tích gói tin bằng công cụ Wireshark trên mạng lõi cho thấy sự xuất hiện dày\nđặc của các bản tin báo hiệu này. Điều này đồng nghĩa với việc Router lõi phải liên tục\ntrích xuất tài nguyên để xử lý và duy trì trạng thái kết nối. 6.1.2. Sự tối ưu của SR-TE\nNgược lại, khi chuyển sang kiến trúc SR -TE, mặt phẳng điều khiển được tối giản\nhoàn toàn.",
+            "source_id": "sr-te-report-2026",
+            "source": "starter/data/TTTN.Nhóm 3.2 (1).pdf",
+            "page": 59,
+            "metadata": {
+              "page_label": "59",
+              "is_blank": false,
+              "chapter": "Chương 6: Đánh giá",
+              "strategy": "by_paragraph"
+            },
+            "score": 0.032266458495966696,
+            "strategy": "rrf"
+          },
+          {
+            "id": "sr-te-report-2026:64:0",
+            "text": "Báo cáo thực tập tốt nghiệp\n\n53\n\nHình 6.9: Ping SR-TE : mất 5 gói tin khi hội tụ lại\n● So sánh kết quả cho thấy, nhờ không phải chờ đợi quá trình trao đổi bản tin báo\nhiệu thiết lập hầm mới (PATH/RESV) như RSVP -TE, công nghệ SR -TE cho\nthời gian hội tụ nhanh hơn hẳn, giảm thiểu tối đa thời gian gián đoạn dịch vụ\nmạng.",
+            "source_id": "sr-te-report-2026",
+            "source": "starter/data/TTTN.Nhóm 3.2 (1).pdf",
+            "page": 64,
+            "metadata": {
+              "page_label": "64",
+              "is_blank": false,
+              "chapter": "Chương 6: Đánh giá",
+              "strategy": "by_paragraph"
+            },
+            "score": 0.032266458495966696,
+            "strategy": "rrf"
+          },
+          {
+            "id": "sr-te-report-2026:63:0",
+            "text": "Báo cáo thực tập tốt nghiệp\n\n52\n\nPath Option 10 (đường chính) và kích hoạt Path Option 20 (đường dự phòng\nvới độ ưu tiên thấp hơn). Đối với SR-TE, quá trình này diễn ra cục bộ tại Ingress\nRouter bằng cách tráo đổi bộ nhãn tương ứng với tuyến dự phòng mà không\ncần báo hiệu lại với toàn mạng. 6.3.2.",
+            "source_id": "sr-te-report-2026",
+            "source": "starter/data/TTTN.Nhóm 3.2 (1).pdf",
+            "page": 63,
+            "metadata": {
+              "page_label": "63",
+              "is_blank": false,
+              "chapter": "Chương 6: Đánh giá",
+              "strategy": "by_paragraph"
+            },
+            "score": 0.031754032258064516,
+            "strategy": "rrf"
+          },
+          {
+            "id": "sr-te-report-2026:65:0",
+            "text": "Báo cáo thực tập tốt nghiệp\n\n54\n\n6.4. Đánh giá và tổng hợp hiệu năng (SR-TE vs RSVP-TE)\nTừ các kết quả thực nghiệm ở trên, có thể rút ra những đánh giá tổng quan về ưu\nthế của SR-TE so với RSVP-TE:\n6.4.1. Giải phóng tài nguyên hệ thống:\nKhác biệt lớn nhất nằm ở khả năng loại bỏ hoàn toàn việc lưu trữ trạng thái tại\nmạng lõi (Stateless).",
+            "source_id": "sr-te-report-2026",
+            "source": "starter/data/TTTN.Nhóm 3.2 (1).pdf",
+            "page": 65,
+            "metadata": {
+              "page_label": "65",
+              "is_blank": false,
+              "chapter": "Chương 6: Đánh giá",
+              "strategy": "by_paragraph"
+            },
+            "score": 0.0315136476426799,
+            "strategy": "rrf"
+          },
+          {
+            "id": "sr-te-report-2026:65:1",
+            "text": "Hình 6.10: Bảng show ip rsvp reservation trên Core Router của RSVP-TE và SR-TE\ntrên CSR4\nThực nghiệm xác nhận Router trung gian trong SR -TE không cần duy trì bất kỳ\nthông tin nào về các đường hầm đi qua nó. Điều này giúp tối ưu hóa tối đa CPU và\nRAM của thiết bị lõi. 6.5. Trách nhiệm nghề nghiệp và tác động của giải pháp công nghệ\n6.5.1.",
+            "source_id": "sr-te-report-2026",
+            "source": "starter/data/TTTN.Nhóm 3.2 (1).pdf",
+            "page": 65,
+            "metadata": {
+              "page_label": "65",
+              "is_blank": false,
+              "chapter": "Chương 6: Đánh giá",
+              "strategy": "by_paragraph"
+            },
+            "score": 0.031009615384615385,
+            "strategy": "rrf"
+          }
+        ],
+        "context": "[sr-te-report-2026:59:1] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 59]\nHình 6.1: Gói tin RSVP PATH/RESV trao đổi liên tục trên tuyến VIP\nPhân tích gói tin bằng công cụ Wireshark trên mạng lõi cho thấy sự xuất hiện dày\nđặc của các bản tin báo hiệu này. Điều này đồng nghĩa với việc Router lõi phải liên tục\ntrích xuất tài nguyên để xử lý và duy trì trạng thái kết nối. 6.1.2. Sự tối ưu của SR-TE\nNgược lại, khi chuyển sang kiến trúc SR -TE, mặt phẳng điều khiển được tối giản\nhoàn toàn.\n\n[sr-te-report-2026:64:0] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 64]\nBáo cáo thực tập tốt nghiệp\n\n53\n\nHình 6.9: Ping SR-TE : mất 5 gói tin khi hội tụ lại\n● So sánh kết quả cho thấy, nhờ không phải chờ đợi quá trình trao đổi bản tin báo\nhiệu thiết lập hầm mới (PATH/RESV) như RSVP -TE, công nghệ SR -TE cho\nthời gian hội tụ nhanh hơn hẳn, giảm thiểu tối đa thời gian gián đoạn dịch vụ\nmạng.\n\n[sr-te-report-2026:63:0] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 63]\nBáo cáo thực tập tốt nghiệp\n\n52\n\nPath Option 10 (đường chính) và kích hoạt Path Option 20 (đường dự phòng\nvới độ ưu tiên thấp hơn). Đối với SR-TE, quá trình này diễn ra cục bộ tại Ingress\nRouter bằng cách tráo đổi bộ nhãn tương ứng với tuyến dự phòng mà không\ncần báo hiệu lại với toàn mạng. 6.3.2.\n\n[sr-te-report-2026:65:0] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 65]\nBáo cáo thực tập tốt nghiệp\n\n54\n\n6.4. Đánh giá và tổng hợp hiệu năng (SR-TE vs RSVP-TE)\nTừ các kết quả thực nghiệm ở trên, có thể rút ra những đánh giá tổng quan về ưu\nthế của SR-TE so với RSVP-TE:\n6.4.1. Giải phóng tài nguyên hệ thống:\nKhác biệt lớn nhất nằm ở khả năng loại bỏ hoàn toàn việc lưu trữ trạng thái tại\nmạng lõi (Stateless).\n\n[sr-te-report-2026:65:1] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 65]\nHình 6.10: Bảng show ip rsvp reservation trên Core Router của RSVP-TE và SR-TE\ntrên CSR4\nThực nghiệm xác nhận Router trung gian trong SR -TE không cần duy trì bất kỳ\nthông tin nào về các đường hầm đi qua nó. Điều này giúp tối ưu hóa tối đa CPU và\nRAM của thiết bị lõi. 6.5. Trách nhiệm nghề nghiệp và tác động của giải pháp công nghệ\n6.5.1.",
+        "context_ids": [
+          "sr-te-report-2026:59:1",
+          "sr-te-report-2026:64:0",
+          "sr-te-report-2026:63:0",
+          "sr-te-report-2026:65:0",
+          "sr-te-report-2026:65:1"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "context": "[sr-te-report-2026:59:1] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 59]\nHình 6.1: Gói tin RSVP PATH/RESV trao đổi liên tục trên tuyến VIP\nPhân tích gói tin bằng công cụ Wireshark trên mạng lõi cho thấy sự xuất hiện dày\nđặc của các bản tin báo hiệu này. Điều này đồng nghĩa với việc Router lõi phải liên tục\ntrích xuất tài nguyên để xử lý và duy trì trạng thái kết nối. 6.1.2. Sự tối ưu của SR-TE\nNgược lại, khi chuyển sang kiến trúc SR -TE, mặt phẳng điều khiển được tối giản\nhoàn toàn.\n\n[sr-te-report-2026:64:0] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 64]\nBáo cáo thực tập tốt nghiệp\n\n53\n\nHình 6.9: Ping SR-TE : mất 5 gói tin khi hội tụ lại\n● So sánh kết quả cho thấy, nhờ không phải chờ đợi quá trình trao đổi bản tin báo\nhiệu thiết lập hầm mới (PATH/RESV) như RSVP -TE, công nghệ SR -TE cho\nthời gian hội tụ nhanh hơn hẳn, giảm thiểu tối đa thời gian gián đoạn dịch vụ\nmạng.\n\n[sr-te-report-2026:63:0] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 63]\nBáo cáo thực tập tốt nghiệp\n\n52\n\nPath Option 10 (đường chính) và kích hoạt Path Option 20 (đường dự phòng\nvới độ ưu tiên thấp hơn). Đối với SR-TE, quá trình này diễn ra cục bộ tại Ingress\nRouter bằng cách tráo đổi bộ nhãn tương ứng với tuyến dự phòng mà không\ncần báo hiệu lại với toàn mạng. 6.3.2.\n\n[sr-te-report-2026:65:0] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 65]\nBáo cáo thực tập tốt nghiệp\n\n54\n\n6.4. Đánh giá và tổng hợp hiệu năng (SR-TE vs RSVP-TE)\nTừ các kết quả thực nghiệm ở trên, có thể rút ra những đánh giá tổng quan về ưu\nthế của SR-TE so với RSVP-TE:\n6.4.1. Giải phóng tài nguyên hệ thống:\nKhác biệt lớn nhất nằm ở khả năng loại bỏ hoàn toàn việc lưu trữ trạng thái tại\nmạng lõi (Stateless).\n\n[sr-te-report-2026:65:1] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 65]\nHình 6.10: Bảng show ip rsvp reservation trên Core Router của RSVP-TE và SR-TE\ntrên CSR4\nThực nghiệm xác nhận Router trung gian trong SR -TE không cần duy trì bất kỳ\nthông tin nào về các đường hầm đi qua nó. Điều này giúp tối ưu hóa tối đa CPU và\nRAM của thiết bị lõi. 6.5. Trách nhiệm nghề nghiệp và tác động của giải pháp công nghệ\n6.5.1.",
+    "context_ids": [
+      "sr-te-report-2026:59:1",
+      "sr-te-report-2026:64:0",
+      "sr-te-report-2026:63:0",
+      "sr-te-report-2026:65:0",
+      "sr-te-report-2026:65:1"
+    ],
+    "search_count": 1,
+    "elapsed_ms": 1.6508999997313367
+  },
+  {
+    "query_id": "Q24",
+    "status": "answered",
+    "answer": "Candidate path là một đường đi khả dĩ có thể được ưu tiên hoặc thay thế theo điều kiện mạng; riêng với link failure, báo cáo nói hệ thống chuyển lưu lượng sang backup path để giảm gián đoạn. Không suy diễn rằng mọi candidate path đều chính là backup path. [sr-te-report-2026:39:5]",
+    "citations": [
+      "sr-te-report-2026:39:5"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "Đặt mô tả candidate path cạnh cách xử lý link failure: báo cáo nói gì riêng về đường đi khả dĩ và hành động chuyển lưu lượng khi lỗi xảy ra?",
+        "filter": null,
+        "results": [
+          {
+            "id": "sr-te-report-2026:39:5",
+            "text": "Trong thực\nhành mô phỏng, Exp licit Path được sử\ndụng khi cần ép buộc luồng dữ liệu phải\nđi qua chính xác một thiết bị cụ thể bất\nkể đường đi đó có bị đoản mạch hay\nkhông.\n\nHình 4.5: Cấu trúc khai báo\nExplicit Path\n• Candidate Path động:",
+            "source_id": "sr-te-report-2026",
+            "source": "starter/data/TTTN.Nhóm 3.2 (1).pdf",
+            "page": 39,
+            "metadata": {
+              "page_label": "39",
+              "is_blank": false,
+              "chapter": "Chương 4: Tính năng và ứng dụng của SR",
+              "strategy": "by_paragraph"
+            },
+            "score": 0.03177805800756621,
+            "strategy": "rrf"
+          },
+          {
+            "id": "sr-te-report-2026:26:0",
+            "text": "Báo cáo thực tập tốt nghiệp\n\n15\n\na. FIB (Forwarding Information Base)\nLưu thông tin chuyển tiếp IP, bao gồm:\n● Địa chỉ đích. ● Next-hop. ● Giao diện đầu ra. FIB được sử dụng khi xử lý lưu lượng IP thông thường hoặc khi thực hiện tra cứu\nsau khi kết thúc xử lý nhãn. b. LFIB (Label Forwarding Information Base)\nLFIB lưu thông tin ánh xạ giữa:\n● Nhãn đến. ● Hành động cần thực hiện. ● Giao diện đầu ra. ● Nhãn mới.",
+            "source_id": "sr-te-report-2026",
+            "source": "starter/data/TTTN.Nhóm 3.2 (1).pdf",
+            "page": 26,
+            "metadata": {
+              "page_label": "26",
+              "is_blank": false,
+              "chapter": "Chương 2: Tổng quan về công nghệ Segment Routing",
+              "strategy": "by_paragraph"
+            },
+            "score": 0.030621785881252923,
+            "strategy": "rrf"
+          },
+          {
+            "id": "sr-te-report-2026:13:5",
+            "text": "● Về mặt tính năng: Phân tích sâu các tính năng nâng cao của SR, đặc biệt là kỹ\nthuật lưu lượng SR-TE Policy và cơ chế đường đi ứng viên Candidate path\n● Về mặt thực hành: Xây dựng thành công mô hình mạng thực nghiệm trên phần\nmềm giả lập EVE-NG. Cấu hình triển khai và kiểm chứng khả năng hoạt động\ncủa SR.",
+            "source_id": "sr-te-report-2026",
+            "source": "starter/data/TTTN.Nhóm 3.2 (1).pdf",
+            "page": 13,
+            "metadata": {
+              "page_label": "13",
+              "is_blank": false,
+              "chapter": "Chương 1: Mở đầu",
+              "strategy": "by_paragraph"
+            },
+            "score": 0.03057889822595705,
+            "strategy": "rrf"
+          },
+          {
+            "id": "sr-te-report-2026:37:0",
+            "text": "Báo cáo thực tập tốt nghiệp\n\n26\n\nđường truyền bị quá tải trong khi các đường truyền khác lại rỗi rảnh, mà\nkhông gây ra hiện tượng hội tụ chậm như các giao thức định tuyến truyền\nthống. 4.2. Đường đi ứng viên (Candidate Path)\n4.2.1. Khái niệm và vai trò của Candidate Path:\n• Khái niệm:\n- Trong quá trình triển khai cấu\nhình SR -TE, một chính sách\nđiều hướng lưu lượng không bị\ngiới hạn cứng vào một lộ trình\nduy nhất.",
+            "source_id": "sr-te-report-2026",
+            "source": "starter/data/TTTN.Nhóm 3.2 (1).pdf",
+            "page": 37,
+            "metadata": {
+              "page_label": "37",
+              "is_blank": false,
+              "chapter": "Chương 4: Tính năng và ứng dụng của SR",
+              "strategy": "by_paragraph"
+            },
+            "score": 0.030090497737556562,
+            "strategy": "rrf"
+          },
+          {
+            "id": "sr-te-report-2026:40:2",
+            "text": "Hình 4.6: Cấu trúc khai báo Dynamic Path\n4.2.4. Cơ chế lựa chọn đường đi hoạt động\nTrong quá trình thực nghiệm, một nút định tuyến Head -end có thể được cấu hình\nrất nhiều Candidate Path khác nhau cho cùng một SR-TE Policy. Tuy nhiên, mặt phẳng\nchuyển tiếp chỉ cho phép cài đặt một đường đi duy nhất làm đường dẫn hoạt động\nchính thức.",
+            "source_id": "sr-te-report-2026",
+            "source": "starter/data/TTTN.Nhóm 3.2 (1).pdf",
+            "page": 40,
+            "metadata": {
+              "page_label": "40",
+              "is_blank": false,
+              "chapter": "Chương 4: Tính năng và ứng dụng của SR",
+              "strategy": "by_paragraph"
+            },
+            "score": 0.030017921146953404,
+            "strategy": "rrf"
+          }
+        ],
+        "context": "[sr-te-report-2026:39:5] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 39]\nTrong thực\nhành mô phỏng, Exp licit Path được sử\ndụng khi cần ép buộc luồng dữ liệu phải\nđi qua chính xác một thiết bị cụ thể bất\nkể đường đi đó có bị đoản mạch hay\nkhông.\n\nHình 4.5: Cấu trúc khai báo\nExplicit Path\n• Candidate Path động:\n\n[sr-te-report-2026:26:0] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 26]\nBáo cáo thực tập tốt nghiệp\n\n15\n\na. FIB (Forwarding Information Base)\nLưu thông tin chuyển tiếp IP, bao gồm:\n● Địa chỉ đích. ● Next-hop. ● Giao diện đầu ra. FIB được sử dụng khi xử lý lưu lượng IP thông thường hoặc khi thực hiện tra cứu\nsau khi kết thúc xử lý nhãn. b. LFIB (Label Forwarding Information Base)\nLFIB lưu thông tin ánh xạ giữa:\n● Nhãn đến. ● Hành động cần thực hiện. ● Giao diện đầu ra. ● Nhãn mới.\n\n[sr-te-report-2026:13:5] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 13]\n● Về mặt tính năng: Phân tích sâu các tính năng nâng cao của SR, đặc biệt là kỹ\nthuật lưu lượng SR-TE Policy và cơ chế đường đi ứng viên Candidate path\n● Về mặt thực hành: Xây dựng thành công mô hình mạng thực nghiệm trên phần\nmềm giả lập EVE-NG. Cấu hình triển khai và kiểm chứng khả năng hoạt động\ncủa SR.\n\n[sr-te-report-2026:37:0] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 37]\nBáo cáo thực tập tốt nghiệp\n\n26\n\nđường truyền bị quá tải trong khi các đường truyền khác lại rỗi rảnh, mà\nkhông gây ra hiện tượng hội tụ chậm như các giao thức định tuyến truyền\nthống. 4.2. Đường đi ứng viên (Candidate Path)\n4.2.1. Khái niệm và vai trò của Candidate Path:\n• Khái niệm:\n- Trong quá trình triển khai cấu\nhình SR -TE, một chính sách\nđiều hướng lưu lượng không bị\ngiới hạn cứng vào một lộ trình\nduy nhất.\n\n[sr-te-report-2026:40:2] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 40]\nHình 4.6: Cấu trúc khai báo Dynamic Path\n4.2.4. Cơ chế lựa chọn đường đi hoạt động\nTrong quá trình thực nghiệm, một nút định tuyến Head -end có thể được cấu hình\nrất nhiều Candidate Path khác nhau cho cùng một SR-TE Policy. Tuy nhiên, mặt phẳng\nchuyển tiếp chỉ cho phép cài đặt một đường đi duy nhất làm đường dẫn hoạt động\nchính thức.",
+        "context_ids": [
+          "sr-te-report-2026:39:5",
+          "sr-te-report-2026:26:0",
+          "sr-te-report-2026:13:5",
+          "sr-te-report-2026:37:0",
+          "sr-te-report-2026:40:2"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "context": "[sr-te-report-2026:39:5] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 39]\nTrong thực\nhành mô phỏng, Exp licit Path được sử\ndụng khi cần ép buộc luồng dữ liệu phải\nđi qua chính xác một thiết bị cụ thể bất\nkể đường đi đó có bị đoản mạch hay\nkhông.\n\nHình 4.5: Cấu trúc khai báo\nExplicit Path\n• Candidate Path động:\n\n[sr-te-report-2026:26:0] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 26]\nBáo cáo thực tập tốt nghiệp\n\n15\n\na. FIB (Forwarding Information Base)\nLưu thông tin chuyển tiếp IP, bao gồm:\n● Địa chỉ đích. ● Next-hop. ● Giao diện đầu ra. FIB được sử dụng khi xử lý lưu lượng IP thông thường hoặc khi thực hiện tra cứu\nsau khi kết thúc xử lý nhãn. b. LFIB (Label Forwarding Information Base)\nLFIB lưu thông tin ánh xạ giữa:\n● Nhãn đến. ● Hành động cần thực hiện. ● Giao diện đầu ra. ● Nhãn mới.\n\n[sr-te-report-2026:13:5] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 13]\n● Về mặt tính năng: Phân tích sâu các tính năng nâng cao của SR, đặc biệt là kỹ\nthuật lưu lượng SR-TE Policy và cơ chế đường đi ứng viên Candidate path\n● Về mặt thực hành: Xây dựng thành công mô hình mạng thực nghiệm trên phần\nmềm giả lập EVE-NG. Cấu hình triển khai và kiểm chứng khả năng hoạt động\ncủa SR.\n\n[sr-te-report-2026:37:0] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 37]\nBáo cáo thực tập tốt nghiệp\n\n26\n\nđường truyền bị quá tải trong khi các đường truyền khác lại rỗi rảnh, mà\nkhông gây ra hiện tượng hội tụ chậm như các giao thức định tuyến truyền\nthống. 4.2. Đường đi ứng viên (Candidate Path)\n4.2.1. Khái niệm và vai trò của Candidate Path:\n• Khái niệm:\n- Trong quá trình triển khai cấu\nhình SR -TE, một chính sách\nđiều hướng lưu lượng không bị\ngiới hạn cứng vào một lộ trình\nduy nhất.\n\n[sr-te-report-2026:40:2] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 40]\nHình 4.6: Cấu trúc khai báo Dynamic Path\n4.2.4. Cơ chế lựa chọn đường đi hoạt động\nTrong quá trình thực nghiệm, một nút định tuyến Head -end có thể được cấu hình\nrất nhiều Candidate Path khác nhau cho cùng một SR-TE Policy. Tuy nhiên, mặt phẳng\nchuyển tiếp chỉ cho phép cài đặt một đường đi duy nhất làm đường dẫn hoạt động\nchính thức.",
+    "context_ids": [
+      "sr-te-report-2026:39:5",
+      "sr-te-report-2026:26:0",
+      "sr-te-report-2026:13:5",
+      "sr-te-report-2026:37:0",
+      "sr-te-report-2026:40:2"
+    ],
+    "search_count": 1,
+    "elapsed_ms": 13.820899999700487
+  },
+  {
+    "query_id": "Q27",
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "events": [
+      {
+        "event": "search",
+        "query": "Trong một sự cố trên mạng thương mại đang khai thác, chính xác có bao nhiêu phút gián đoạn dịch vụ được ghi nhận?",
+        "filter": null,
+        "results": [
+          {
+            "id": "sr-te-report-2026:16:2",
+            "text": "Sự phát triển của hạ tầng mạng thế hệ mới\nTrong kỷ nguyên số hóa hiện nay, hạ tầng mạng viễn thông đang trải qua những\nbước chuyển mình mạnh mẽ, được thúc đẩy bởi sự bùng nổ của các công nghệ cốt lõi:\n● Sự bùng nổ của lưu lượng mạng và dịch vụ: Các dịch vụ thế hệ mới như mạng\ndi động 5G/6G, điện toán đám mây, dữ liệu lớn, Internet vạn vật, và các ứng\ndụng thời gian thực yêu cầu hạ tầng mạng phải có băng thông cực lớn và khả\nnăng xử lý động.",
+            "source_id": "sr-te-report-2026",
+            "source": "starter/data/TTTN.Nhóm 3.2 (1).pdf",
+            "page": 16,
+            "metadata": {
+              "page_label": "16",
+              "is_blank": false,
+              "chapter": "Chương 2: Tổng quan về công nghệ Segment Routing",
+              "strategy": "by_paragraph"
+            },
+            "score": 0.030798389007344232,
+            "strategy": "rrf"
+          },
+          {
+            "id": "sr-te-report-2026:57:0",
+            "text": "Báo cáo thực tập tốt nghiệp\n\n46\n\nHình 5.10: Lịch sử path change (time since path change)\n● Đo lường thời gian gián đoạn: Ghi nhận số lượng gói tin bị rớt (Request\nTimeout) trên máy chủ phát lưu lượng (ping liên tục với interval thấp, hoặc\nUDP packet-loss report từ iPerf3). Từ đó, tính toán chính xác thời gian gián\nđoạn dịch vụ và tốc độ hội tụ lại của mạng lưới RSVP-TE.",
+            "source_id": "sr-te-report-2026",
+            "source": "starter/data/TTTN.Nhóm 3.2 (1).pdf",
+            "page": 57,
+            "metadata": {
+              "page_label": "57",
+              "is_blank": false,
+              "chapter": "Chương 5: Thiết kế mô hình thực nghiệm",
+              "strategy": "by_paragraph"
+            },
+            "score": 0.030679156908665108,
+            "strategy": "rrf"
+          },
+          {
+            "id": "sr-te-report-2026:41:2",
+            "text": "Tiến trình Path Selection không\nphải chỉ chạy một lần mà sẽ tự động chạy lại ngay lập tức khi xảy ra một trong các\nbiến cố sau:\n- Head-end học thêm được một Candidate Path mới. - Có sự thay đổi trong cấu hình của một Candidate Path đang tồn tại.",
+            "source_id": "sr-te-report-2026",
+            "source": "starter/data/TTTN.Nhóm 3.2 (1).pdf",
+            "page": 41,
+            "metadata": {
+              "page_label": "41",
+              "is_blank": false,
+              "chapter": "Chương 4: Tính năng và ứng dụng của SR",
+              "strategy": "by_paragraph"
+            },
+            "score": 0.02964426877470356,
+            "strategy": "rrf"
+          },
+          {
+            "id": "sr-te-report-2026:53:1",
+            "text": "Kịch bản 1: Hoạt động ở trạng thái nền\nMục tiêu: Kiểm tra và minh chứng tính chính xác của cơ chế nắn luồng (Traffic\nSteering) của Segment Routing trong điều kiện mạng lưới hoạt động bình thường,\nkhông xảy ra sự cố phần cứng. Kịch bản này nhằm xác nhận rằng hệ thống SR -TE có\nthể ghi đè lên quyết định định tuyến theo đường ngắn nhất của OSPF.",
+            "source_id": "sr-te-report-2026",
+            "source": "starter/data/TTTN.Nhóm 3.2 (1).pdf",
+            "page": 53,
+            "metadata": {
+              "page_label": "53",
+              "is_blank": false,
+              "chapter": "Chương 5: Thiết kế mô hình thực nghiệm",
+              "strategy": "by_paragraph"
+            },
+            "score": 0.029138513513513514,
+            "strategy": "rrf"
+          },
+          {
+            "id": "sr-te-report-2026:31:3",
+            "text": "Trong khi đó, SRv6 được xây dựng trên nền IPv6, khai\nthác không gian địa chỉ 128 bit để tích hợp cả chức năng định tuyến và lập trình mạng\nvào một địa chỉ IPv6 duy nhất. Điều này mang lại khả năng mở rộng và tính linh hoạt\ncao hơn, đặc biệt trong các mạng thế hệ mới như Data Center, SDN, NFV và 5G\n3.2.1. Ưu và nhược điểm của SR-MPLS:\na) Ưu điểm:\n● Bảo toàn đầu tư hạ tầng: SR-MPLS hoạt động trực tiếp trên mặt phẳng dữ liệu\nMPLS hiện có.",
+            "source_id": "sr-te-report-2026",
+            "source": "starter/data/TTTN.Nhóm 3.2 (1).pdf",
+            "page": 31,
+            "metadata": {
+              "page_label": "31",
+              "is_blank": false,
+              "chapter": "Chương 3: Kiến trúc triển khai của SR",
+              "strategy": "by_paragraph"
+            },
+            "score": 0.029051670471052088,
+            "strategy": "rrf"
+          }
+        ],
+        "context": "[sr-te-report-2026:16:2] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 16]\nSự phát triển của hạ tầng mạng thế hệ mới\nTrong kỷ nguyên số hóa hiện nay, hạ tầng mạng viễn thông đang trải qua những\nbước chuyển mình mạnh mẽ, được thúc đẩy bởi sự bùng nổ của các công nghệ cốt lõi:\n● Sự bùng nổ của lưu lượng mạng và dịch vụ: Các dịch vụ thế hệ mới như mạng\ndi động 5G/6G, điện toán đám mây, dữ liệu lớn, Internet vạn vật, và các ứng\ndụng thời gian thực yêu cầu hạ tầng mạng phải có băng thông cực lớn và khả\nnăng xử lý động.\n\n[sr-te-report-2026:57:0] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 57]\nBáo cáo thực tập tốt nghiệp\n\n46\n\nHình 5.10: Lịch sử path change (time since path change)\n● Đo lường thời gian gián đoạn: Ghi nhận số lượng gói tin bị rớt (Request\nTimeout) trên máy chủ phát lưu lượng (ping liên tục với interval thấp, hoặc\nUDP packet-loss report từ iPerf3). Từ đó, tính toán chính xác thời gian gián\nđoạn dịch vụ và tốc độ hội tụ lại của mạng lưới RSVP-TE.\n\n[sr-te-report-2026:41:2] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 41]\nTiến trình Path Selection không\nphải chỉ chạy một lần mà sẽ tự động chạy lại ngay lập tức khi xảy ra một trong các\nbiến cố sau:\n- Head-end học thêm được một Candidate Path mới. - Có sự thay đổi trong cấu hình của một Candidate Path đang tồn tại.\n\n[sr-te-report-2026:53:1] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 53]\nKịch bản 1: Hoạt động ở trạng thái nền\nMục tiêu: Kiểm tra và minh chứng tính chính xác của cơ chế nắn luồng (Traffic\nSteering) của Segment Routing trong điều kiện mạng lưới hoạt động bình thường,\nkhông xảy ra sự cố phần cứng. Kịch bản này nhằm xác nhận rằng hệ thống SR -TE có\nthể ghi đè lên quyết định định tuyến theo đường ngắn nhất của OSPF.\n\n[sr-te-report-2026:31:3] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 31]\nTrong khi đó, SRv6 được xây dựng trên nền IPv6, khai\nthác không gian địa chỉ 128 bit để tích hợp cả chức năng định tuyến và lập trình mạng\nvào một địa chỉ IPv6 duy nhất. Điều này mang lại khả năng mở rộng và tính linh hoạt\ncao hơn, đặc biệt trong các mạng thế hệ mới như Data Center, SDN, NFV và 5G\n3.2.1. Ưu và nhược điểm của SR-MPLS:\na) Ưu điểm:\n● Bảo toàn đầu tư hạ tầng: SR-MPLS hoạt động trực tiếp trên mặt phẳng dữ liệu\nMPLS hiện có.",
+        "context_ids": [
+          "sr-te-report-2026:16:2",
+          "sr-te-report-2026:57:0",
+          "sr-te-report-2026:41:2",
+          "sr-te-report-2026:53:1",
+          "sr-te-report-2026:31:3"
+        ]
+      },
+      {
+        "event": "invalid_or_missing_citations"
+      }
+    ],
+    "context": "[sr-te-report-2026:16:2] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 16]\nSự phát triển của hạ tầng mạng thế hệ mới\nTrong kỷ nguyên số hóa hiện nay, hạ tầng mạng viễn thông đang trải qua những\nbước chuyển mình mạnh mẽ, được thúc đẩy bởi sự bùng nổ của các công nghệ cốt lõi:\n● Sự bùng nổ của lưu lượng mạng và dịch vụ: Các dịch vụ thế hệ mới như mạng\ndi động 5G/6G, điện toán đám mây, dữ liệu lớn, Internet vạn vật, và các ứng\ndụng thời gian thực yêu cầu hạ tầng mạng phải có băng thông cực lớn và khả\nnăng xử lý động.\n\n[sr-te-report-2026:57:0] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 57]\nBáo cáo thực tập tốt nghiệp\n\n46\n\nHình 5.10: Lịch sử path change (time since path change)\n● Đo lường thời gian gián đoạn: Ghi nhận số lượng gói tin bị rớt (Request\nTimeout) trên máy chủ phát lưu lượng (ping liên tục với interval thấp, hoặc\nUDP packet-loss report từ iPerf3). Từ đó, tính toán chính xác thời gian gián\nđoạn dịch vụ và tốc độ hội tụ lại của mạng lưới RSVP-TE.\n\n[sr-te-report-2026:41:2] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 41]\nTiến trình Path Selection không\nphải chỉ chạy một lần mà sẽ tự động chạy lại ngay lập tức khi xảy ra một trong các\nbiến cố sau:\n- Head-end học thêm được một Candidate Path mới. - Có sự thay đổi trong cấu hình của một Candidate Path đang tồn tại.\n\n[sr-te-report-2026:53:1] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 53]\nKịch bản 1: Hoạt động ở trạng thái nền\nMục tiêu: Kiểm tra và minh chứng tính chính xác của cơ chế nắn luồng (Traffic\nSteering) của Segment Routing trong điều kiện mạng lưới hoạt động bình thường,\nkhông xảy ra sự cố phần cứng. Kịch bản này nhằm xác nhận rằng hệ thống SR -TE có\nthể ghi đè lên quyết định định tuyến theo đường ngắn nhất của OSPF.\n\n[sr-te-report-2026:31:3] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 31]\nTrong khi đó, SRv6 được xây dựng trên nền IPv6, khai\nthác không gian địa chỉ 128 bit để tích hợp cả chức năng định tuyến và lập trình mạng\nvào một địa chỉ IPv6 duy nhất. Điều này mang lại khả năng mở rộng và tính linh hoạt\ncao hơn, đặc biệt trong các mạng thế hệ mới như Data Center, SDN, NFV và 5G\n3.2.1. Ưu và nhược điểm của SR-MPLS:\na) Ưu điểm:\n● Bảo toàn đầu tư hạ tầng: SR-MPLS hoạt động trực tiếp trên mặt phẳng dữ liệu\nMPLS hiện có.",
+    "context_ids": [
+      "sr-te-report-2026:16:2",
+      "sr-te-report-2026:57:0",
+      "sr-te-report-2026:41:2",
+      "sr-te-report-2026:53:1",
+      "sr-te-report-2026:31:3"
+    ],
+    "search_count": 1,
+    "elapsed_ms": 14.672999999675085
+  },
+  {
+    "query_id": "Q28",
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "events": [
+      {
+        "event": "search",
+        "query": "Báo cáo nêu tên nhà mạng thương mại nào đã cung cấp dữ liệu lưu lượng thực tế cho thí nghiệm?",
+        "filter": null,
+        "results": [
+          {
+            "id": "sr-te-report-2026:20:0",
+            "text": "Báo cáo thực tập tốt nghiệp\n\n9\n\ntrong mạng chứ không phụ thuộc vào số lượng luồng dữ liệu hay số lượng dịch\nvụ. ● Trí thông minh dồn về biên: Toàn bộ trạng thái của đường đi (luồng này đi qua\nnhững đâu, yêu cầu độ trễ thế nào) đã được cô đọng hoàn toàn vào trong\nSegment List nằm trên tiêu đề gói tin tại nút biên. Lõi mạng lúc này chỉ đóng\nvai trò là một \"cỗ máy thực thi chỉ thị\" thuần túy, nhanh và tinh gọn. 2.2.4.",
+            "source_id": "sr-te-report-2026",
+            "source": "starter/data/TTTN.Nhóm 3.2 (1).pdf",
+            "page": 20,
+            "metadata": {
+              "page_label": "20",
+              "is_blank": false,
+              "chapter": "Chương 2: Tổng quan về công nghệ Segment Routing",
+              "strategy": "by_paragraph"
+            },
+            "score": 0.03131881575727918,
+            "strategy": "rrf"
+          },
+          {
+            "id": "sr-te-report-2026:32:3",
+            "text": "Kịch bản ứng dụng thực tế:\nKịch bản áp dụng SR-MPLS:\n● Mạng Core/Backbone hiện hữu của các ISP/Telco: Nơi đã có sẵn hạ tầng MPLS\nổn định và các nhà mạng muốn tối ưu hóa chi phí bằng cách chuyển đổi từ\nLDP/RSVP-TE sang SR-MPLS thông qua nâng cấp phần mềm. ● Ứng dụng Traffic Engineering và Bảo vệ mạng tức thì: Triển khai cho các mạng\nWAN doanh nghiệp lớn đòi hỏi tối ưu hóa lưu lượng, tránh nghẽn mạch và đảm\nbảo thời gian hội tụ khi có sự cố dưới .",
+            "source_id": "sr-te-report-2026",
+            "source": "starter/data/TTTN.Nhóm 3.2 (1).pdf",
+            "page": 32,
+            "metadata": {
+              "page_label": "32",
+              "is_blank": false,
+              "chapter": "Chương 3: Kiến trúc triển khai của SR",
+              "strategy": "by_paragraph"
+            },
+            "score": 0.030776515151515152,
+            "strategy": "rrf"
+          },
+          {
+            "id": "sr-te-report-2026:42:1",
+            "text": "Dưới đây là 3 ứng dụng cốt lõi của SR-TE đối với các nhà cung cấp dịch vụ:\n4.3.1. Đảm bảo chất lượng dịch vụ:\nTrong các mạng IP truyền thống, phần lớn lưu lượng dữ liệu đều được đối xử\nngang bằng và luân chuyển theo con đường ngắn nhất, gây khó khăn trong việc cam\nkết chất lượng cho các dịch vụ cao cấp. Với SR -TE, nhà mạng có thể triển khai định\ntuyến dựa trên SLA một cách hoàn toàn tự động thông qua thuộc tính \"Color\".",
+            "source_id": "sr-te-report-2026",
+            "source": "starter/data/TTTN.Nhóm 3.2 (1).pdf",
+            "page": 42,
+            "metadata": {
+              "page_label": "42",
+              "is_blank": false,
+              "chapter": "Chương 4: Tính năng và ứng dụng của SR",
+              "strategy": "by_paragraph"
+            },
+            "score": 0.030679156908665108,
+            "strategy": "rrf"
+          },
+          {
+            "id": "sr-te-report-2026:66:0",
+            "text": "Báo cáo thực tập tốt nghiệp\n\n55\n\nthiết yếu, hạn chế tối đa thời gian gián đoạn, từ đó nâng cao chất lượng dịch vụ\nvà trải nghiệm của người dùng cuối trong kỷ nguyên số. 6.5.2. Đạo đức và trách nhiệm nghề nghiệp của kỹ sư mạng\n● Trong quá trình thiết kế, đánh giá và vận hành hệ thống mạng, kỹ sư mạng phải\nđặt tính toàn vẹn, tính sẵn sàng và bảo mật của dữ liệu lên hàng đầu.",
+            "source_id": "sr-te-report-2026",
+            "source": "starter/data/TTTN.Nhóm 3.2 (1).pdf",
+            "page": 66,
+            "metadata": {
+              "page_label": "66",
+              "is_blank": false,
+              "chapter": "Chương 6: Đánh giá",
+              "strategy": "by_paragraph"
+            },
+            "score": 0.02964254577157803,
+            "strategy": "rrf"
+          },
+          {
+            "id": "sr-te-report-2026:48:0",
+            "text": "Báo cáo thực tập tốt nghiệp\n\n37\n\n● Node Nguồn (Máy chủ Linux 1 / VPC7): Nằm tại Chi nhánh A, đóng vai trò\nphát sinh lưu lượng kiểm thử (Traffic Generator) bao gồm luồng dữ liệu thông\nthường và luồng ưu tiên. ● CSR2 (Ingress PE / Head -end): Nút mạng biên đầu vào, chịu trách nhiệm tiếp\nnhận lưu lượng từ người dùng, phân loại luồng (thông qua PBR) và áp dụng các\nchính sách SR-TE để bọc chuỗi nhãn SID vào phần đầu gói tin.",
+            "source_id": "sr-te-report-2026",
+            "source": "starter/data/TTTN.Nhóm 3.2 (1).pdf",
+            "page": 48,
+            "metadata": {
+              "page_label": "48",
+              "is_blank": false,
+              "chapter": "Chương 5: Thiết kế mô hình thực nghiệm",
+              "strategy": "by_paragraph"
+            },
+            "score": 0.029571646010002173,
+            "strategy": "rrf"
+          }
+        ],
+        "context": "[sr-te-report-2026:20:0] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 20]\nBáo cáo thực tập tốt nghiệp\n\n9\n\ntrong mạng chứ không phụ thuộc vào số lượng luồng dữ liệu hay số lượng dịch\nvụ. ● Trí thông minh dồn về biên: Toàn bộ trạng thái của đường đi (luồng này đi qua\nnhững đâu, yêu cầu độ trễ thế nào) đã được cô đọng hoàn toàn vào trong\nSegment List nằm trên tiêu đề gói tin tại nút biên. Lõi mạng lúc này chỉ đóng\nvai trò là một \"cỗ máy thực thi chỉ thị\" thuần túy, nhanh và tinh gọn. 2.2.4.\n\n[sr-te-report-2026:32:3] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 32]\nKịch bản ứng dụng thực tế:\nKịch bản áp dụng SR-MPLS:\n● Mạng Core/Backbone hiện hữu của các ISP/Telco: Nơi đã có sẵn hạ tầng MPLS\nổn định và các nhà mạng muốn tối ưu hóa chi phí bằng cách chuyển đổi từ\nLDP/RSVP-TE sang SR-MPLS thông qua nâng cấp phần mềm. ● Ứng dụng Traffic Engineering và Bảo vệ mạng tức thì: Triển khai cho các mạng\nWAN doanh nghiệp lớn đòi hỏi tối ưu hóa lưu lượng, tránh nghẽn mạch và đảm\nbảo thời gian hội tụ khi có sự cố dưới .\n\n[sr-te-report-2026:42:1] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 42]\nDưới đây là 3 ứng dụng cốt lõi của SR-TE đối với các nhà cung cấp dịch vụ:\n4.3.1. Đảm bảo chất lượng dịch vụ:\nTrong các mạng IP truyền thống, phần lớn lưu lượng dữ liệu đều được đối xử\nngang bằng và luân chuyển theo con đường ngắn nhất, gây khó khăn trong việc cam\nkết chất lượng cho các dịch vụ cao cấp. Với SR -TE, nhà mạng có thể triển khai định\ntuyến dựa trên SLA một cách hoàn toàn tự động thông qua thuộc tính \"Color\".\n\n[sr-te-report-2026:66:0] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 66]\nBáo cáo thực tập tốt nghiệp\n\n55\n\nthiết yếu, hạn chế tối đa thời gian gián đoạn, từ đó nâng cao chất lượng dịch vụ\nvà trải nghiệm của người dùng cuối trong kỷ nguyên số. 6.5.2. Đạo đức và trách nhiệm nghề nghiệp của kỹ sư mạng\n● Trong quá trình thiết kế, đánh giá và vận hành hệ thống mạng, kỹ sư mạng phải\nđặt tính toàn vẹn, tính sẵn sàng và bảo mật của dữ liệu lên hàng đầu.",
+        "context_ids": [
+          "sr-te-report-2026:20:0",
+          "sr-te-report-2026:32:3",
+          "sr-te-report-2026:42:1",
+          "sr-te-report-2026:66:0"
+        ]
+      },
+      {
+        "event": "invalid_or_missing_citations"
+      }
+    ],
+    "context": "[sr-te-report-2026:20:0] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 20]\nBáo cáo thực tập tốt nghiệp\n\n9\n\ntrong mạng chứ không phụ thuộc vào số lượng luồng dữ liệu hay số lượng dịch\nvụ. ● Trí thông minh dồn về biên: Toàn bộ trạng thái của đường đi (luồng này đi qua\nnhững đâu, yêu cầu độ trễ thế nào) đã được cô đọng hoàn toàn vào trong\nSegment List nằm trên tiêu đề gói tin tại nút biên. Lõi mạng lúc này chỉ đóng\nvai trò là một \"cỗ máy thực thi chỉ thị\" thuần túy, nhanh và tinh gọn. 2.2.4.\n\n[sr-te-report-2026:32:3] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 32]\nKịch bản ứng dụng thực tế:\nKịch bản áp dụng SR-MPLS:\n● Mạng Core/Backbone hiện hữu của các ISP/Telco: Nơi đã có sẵn hạ tầng MPLS\nổn định và các nhà mạng muốn tối ưu hóa chi phí bằng cách chuyển đổi từ\nLDP/RSVP-TE sang SR-MPLS thông qua nâng cấp phần mềm. ● Ứng dụng Traffic Engineering và Bảo vệ mạng tức thì: Triển khai cho các mạng\nWAN doanh nghiệp lớn đòi hỏi tối ưu hóa lưu lượng, tránh nghẽn mạch và đảm\nbảo thời gian hội tụ khi có sự cố dưới .\n\n[sr-te-report-2026:42:1] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 42]\nDưới đây là 3 ứng dụng cốt lõi của SR-TE đối với các nhà cung cấp dịch vụ:\n4.3.1. Đảm bảo chất lượng dịch vụ:\nTrong các mạng IP truyền thống, phần lớn lưu lượng dữ liệu đều được đối xử\nngang bằng và luân chuyển theo con đường ngắn nhất, gây khó khăn trong việc cam\nkết chất lượng cho các dịch vụ cao cấp. Với SR -TE, nhà mạng có thể triển khai định\ntuyến dựa trên SLA một cách hoàn toàn tự động thông qua thuộc tính \"Color\".\n\n[sr-te-report-2026:66:0] [starter/data/TTTN.Nhóm 3.2 (1).pdf | page 66]\nBáo cáo thực tập tốt nghiệp\n\n55\n\nthiết yếu, hạn chế tối đa thời gian gián đoạn, từ đó nâng cao chất lượng dịch vụ\nvà trải nghiệm của người dùng cuối trong kỷ nguyên số. 6.5.2. Đạo đức và trách nhiệm nghề nghiệp của kỹ sư mạng\n● Trong quá trình thiết kế, đánh giá và vận hành hệ thống mạng, kỹ sư mạng phải\nđặt tính toàn vẹn, tính sẵn sàng và bảo mật của dữ liệu lên hàng đầu.",
+    "context_ids": [
+      "sr-te-report-2026:20:0",
+      "sr-te-report-2026:32:3",
+      "sr-te-report-2026:42:1",
+      "sr-te-report-2026:66:0"
+    ],
+    "search_count": 1,
+    "elapsed_ms": 13.335899999219691
+  }
+]

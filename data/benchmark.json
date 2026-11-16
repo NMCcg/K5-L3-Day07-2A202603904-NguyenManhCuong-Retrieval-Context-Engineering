@@ -1,0 +1,646 @@
+{
+  "document_id": "sr-te-report-2026",
+  "questions": [
+    {
+      "id": "Q1",
+      "split": "dev",
+      "question": "Segment Routing giúp giải quyết vấn đề gì trong mạng truyền tải hiện đại?",
+      "expected_answer": "Giảm phức tạp và cải thiện khả năng điều hướng theo chính sách trong mạng truyền tải hiện đại, đặc biệt khi phải xử lý lưu lượng tăng và yêu cầu QoS/traffic engineering.",
+      "gold_source_id": "sr-te-report-2026",
+      "gold_pages": [
+        13
+      ],
+      "gold_keywords": [
+        "mạng truyền tải",
+        "Segment Routing",
+        "traffic engineering"
+      ],
+      "evidence_quote": "nguyên và khó khăn trong việc tích hợp với các hệ thống điều khiển tự động hóa. Để giải quyết những bài toán này, công nghệ Segment Routing đã ra đời như một",
+      "filter": null,
+      "category": "concept"
+    },
+    {
+      "id": "Q2",
+      "split": "dev",
+      "question": "Tại sao báo cáo cho rằng mạng truyền tải hiện nay phải đối mặt với thách thức lớn?",
+      "expected_answer": "Vì các dịch vụ số hóa, điện toán đám mây, IoT và mạng 5G tạo ra nhu cầu băng thông và độ trễ khác nhau, buộc mạng cần tối ưu hóa và điều hướng theo chính sách.",
+      "gold_source_id": "sr-te-report-2026",
+      "gold_pages": [
+        13
+      ],
+      "gold_keywords": [
+        "điện toán đám mây",
+        "Internet vạn vật",
+        "mạng 5G"
+      ],
+      "evidence_quote": "vật và đặc biệt là mạng 5G, hạ tầng mạng truyền tải đang phải đối mặt với những",
+      "filter": null,
+      "category": "motivation"
+    },
+    {
+      "id": "Q3",
+      "split": "dev",
+      "question": "SR-TE khác với routing truyền thống như thế nào?",
+      "expected_answer": "SR-TE xây dựng đường đi theo chính sách bằng cách gắn từng segment trên đường truyền, thay vì chỉ dựa vào tuyến đường ngắn nhất theo metric truyền thống.",
+      "gold_source_id": "sr-te-report-2026",
+      "gold_pages": [
+        16
+      ],
+      "gold_keywords": [
+        "thực hiện định tuyến theo chính sách",
+        "segment routing",
+        "shortest path"
+      ],
+      "evidence_quote": "2.1. Bối cảnh ra đời của Segment Routing và sự hạn chế của MPLS truyền thống. Segment Routing được phát triển nhằm giải quyết những hạn chế của mạng MPLS",
+      "filter": null,
+      "category": "comparison"
+    },
+    {
+      "id": "Q4",
+      "split": "dev",
+      "question": "Các loại SID trong Segment Routing được nêu dưới dạng nào?",
+      "expected_answer": "Các SID thường bao gồm Prefix-SID, Adjacency-SID và node/adjacency biểu thị các thành phần mạng, giúp định tuyến và truyền dữ liệu theo segment.",
+      "gold_source_id": "sr-te-report-2026",
+      "gold_pages": [
+        18
+      ],
+      "gold_keywords": [
+        "Prefix-SID",
+        "Adjacency-SID",
+        "segment identifier"
+      ],
+      "evidence_quote": "cốt lõi giữa Segment Routing và các cơ chế định tuyến truyền thống.",
+      "filter": null,
+      "category": "concept"
+    },
+    {
+      "id": "Q5",
+      "split": "dev",
+      "question": "Kiến trúc triển khai SR có những lớp nào?",
+      "expected_answer": "Kiến trúc triển khai SR gồm các lớp điều khiển, dữ liệu và ứng dụng/trao đổi thông tin về cách định tuyến và chuyển tiếp theo segment.",
+      "gold_source_id": "sr-te-report-2026",
+      "gold_pages": [
+        28
+      ],
+      "gold_keywords": [
+        "kiến trúc triển khai",
+        "control plane",
+        "data plane"
+      ],
+      "evidence_quote": "3.1. Kiến trúc triển khai SR-MPLS. SR-MPLS là phương thức triển khai Segment Routing trên hạ tầng MPLS hiện có.",
+      "filter": null,
+      "category": "architecture"
+    },
+    {
+      "id": "Q6",
+      "split": "dev",
+      "question": "Mục tiêu chính của Chương 3 trong báo cáo là gì?",
+      "expected_answer": "Mô tả cách triển khai kiến trúc SR trong mô hình thực tế, bao gồm việc ánh xạ SID, định tuyến và chuyển tiếp theo segment trong mạng MPLS.",
+      "gold_source_id": "sr-te-report-2026",
+      "gold_pages": [
+        28
+      ],
+      "gold_keywords": [
+        "Chương 3",
+        "triển khai",
+        "SR-MPLS"
+      ],
+      "evidence_quote": "3.1. Kiến trúc triển khai SR-MPLS. SR-MPLS là phương thức triển khai Segment Routing trên hạ tầng MPLS hiện có.",
+      "filter": {
+        "chapter": "Chương 3: Kiến trúc triển khai của SR"
+      },
+      "category": "section"
+    },
+    {
+      "id": "Q7",
+      "split": "dev",
+      "question": "SR-TE được sử dụng cho các tình huống nào theo phần ứng dụng của báo cáo?",
+      "expected_answer": "Cho các tình huống cần điều hướng lưu lượng theo chính sách, QoS, dự phòng và tối ưu hóa đường đi khi có nhiều tuyến song song hoặc biến động tải.",
+      "gold_source_id": "sr-te-report-2026",
+      "gold_pages": [
+        34
+      ],
+      "gold_keywords": [
+        "ứng dụng",
+        "QoS",
+        "traffic engineering"
+      ],
+      "evidence_quote": "quản trị viên khởi tạo và áp dụng chính sách điều hướng lưu lượng.",
+      "filter": {
+        "chapter": "Chương 4: Tính năng và ứng dụng của SR"
+      },
+      "category": "application"
+    },
+    {
+      "id": "Q8",
+      "split": "dev",
+      "question": "Candidate path trong SR-TE có vai trò gì?",
+      "expected_answer": "Candidate path đại diện cho các tuyến thay thế hoặc tuyến ưu tiên mà hệ thống có thể chọn để định tuyến lưu lượng theo chính sách và bảo vệ.",
+      "gold_source_id": "sr-te-report-2026",
+      "gold_pages": [
+        34
+      ],
+      "gold_keywords": [
+        "candidate path",
+        "tuyến thay thế",
+        "priority"
+      ],
+      "evidence_quote": "- Cơ chế hoạt động: Thay vì để giao thức định tuyến nội vùng tự động chọn",
+      "filter": null,
+      "category": "concept"
+    },
+    {
+      "id": "Q9",
+      "split": "dev",
+      "question": "EVE-NG trong thí nghiệm phục vụ mục đích gì?",
+      "expected_answer": "EVE-NG được dùng để mô phỏng mạng và kiểm tra các kịch bản SR-TE trước khi triển khai trên hệ thống thực tế.",
+      "gold_source_id": "sr-te-report-2026",
+      "gold_pages": [
+        44
+      ],
+      "gold_keywords": [
+        "EVE-NG",
+        "mô phỏng",
+        "thí nghiệm"
+      ],
+      "evidence_quote": "thuyết, bài toán thực nghiệm được đặt ra nhằm mục đích minh chứng rõ ràng sự khác",
+      "filter": {
+        "chapter": "Chương 5: Thiết kế mô hình thực nghiệm"
+      },
+      "category": "method"
+    },
+    {
+      "id": "Q10",
+      "split": "dev",
+      "question": "Theo mô hình thực nghiệm, topology được thiết kế như thế nào?",
+      "expected_answer": "Topology mô phỏng có nhiều nút/đường liên kết và nội dung về phân bổ IP/SID, cho phép kiểm tra định tuyến và traffic engineering trong điều kiện thay đổi lưu lượng.",
+      "gold_source_id": "sr-te-report-2026",
+      "gold_pages": [
+        44
+      ],
+      "gold_keywords": [
+        "topology",
+        "IP",
+        "SID",
+        "traffic"
+      ],
+      "evidence_quote": "Để đạt được mục tiêu đó, mô hình thực nghiệm phải đáp ứng các yêu cầu khắt khe sau:",
+      "filter": {
+        "chapter": "Chương 5: Thiết kế mô hình thực nghiệm"
+      },
+      "category": "method"
+    },
+    {
+      "id": "Q11",
+      "split": "dev",
+      "question": "Báo cáo so sánh SR-TE với RSVP-TE ở phần nào?",
+      "expected_answer": "Ở phần đánh giá hiệu năng, báo cáo so sánh cách xử lý tín hiệu và phân phối lưu lượng giữa SR-TE và RSVP-TE.",
+      "gold_source_id": "sr-te-report-2026",
+      "gold_pages": [
+        59
+      ],
+      "gold_keywords": [
+        "RSVP-TE",
+        "so sánh",
+        "hiệu năng"
+      ],
+      "evidence_quote": "6.1.1. Báo hiệu duy trì hầm của RSVP-TE",
+      "filter": {
+        "chapter": "Chương 6: Đánh giá"
+      },
+      "category": "comparison"
+    },
+    {
+      "id": "Q12",
+      "split": "dev",
+      "question": "Khi xảy ra lỗi đường liên kết, báo cáo nói gì về backup path?",
+      "expected_answer": "Báo cáo mô tả việc chuyển lưu lượng sang backup path khi có link failure, đồng thời đánh giá thời gian phục hồi và mức độ gián đoạn dịch vụ.",
+      "gold_source_id": "sr-te-report-2026",
+      "gold_pages": [
+        63
+      ],
+      "gold_keywords": [
+        "backup path",
+        "link failure",
+        "phục hồi"
+      ],
+      "evidence_quote": "Phân tích thời gian hội tụ và gián đoạn dịch vụ:",
+      "filter": {
+        "chapter": "Chương 6: Đánh giá"
+      },
+      "category": "recovery"
+    },
+    {
+      "id": "Q13",
+      "split": "dev",
+      "question": "Yếu tố nào là trọng tâm trong đánh giá hiệu năng của báo cáo?",
+      "expected_answer": "Thời gian hội tụ, độ trễ, khả năng phục hồi sau lỗi và hiệu quả sử dụng tài nguyên mạng là các tiêu chí đánh giá trọng tâm.",
+      "gold_source_id": "sr-te-report-2026",
+      "gold_pages": [
+        62
+      ],
+      "gold_keywords": [
+        "hiệu năng",
+        "thời gian hội tụ",
+        "bảo toàn dịch vụ"
+      ],
+      "evidence_quote": "năng tự động phục hồi của mạng lưới. 6.3.1.",
+      "filter": null,
+      "category": "metrics"
+    },
+    {
+      "id": "Q14",
+      "split": "dev",
+      "question": "Đánh giá của báo cáo nhấn mạnh điều gì về lợi ích của SR-TE?",
+      "expected_answer": "Nhấn mạnh khả năng tối ưu hóa đường đi, giảm rủi ro khi có lỗi và hỗ trợ điều phối lưu lượng theo chính sách hiệu quả hơn.",
+      "gold_source_id": "sr-te-report-2026",
+      "gold_pages": [
+        65
+      ],
+      "gold_keywords": [
+        "lợi ích",
+        "điều phối lưu lượng",
+        "tối ưu hóa"
+      ],
+      "evidence_quote": "6.4. Đánh giá và tổng hợp hiệu năng (SR-TE vs RSVP-TE)",
+      "filter": null,
+      "category": "benefits"
+    },
+    {
+      "id": "Q15",
+      "split": "dev",
+      "question": "Phần đánh giá kết quả nêu những lợi ích vận hành nào của SR-TE?",
+      "expected_answer": "Tối ưu hóa đường đi, điều phối lưu lượng theo chính sách và giảm thời gian khôi phục sau sự cố.",
+      "gold_source_id": "sr-te-report-2026",
+      "gold_pages": [
+        64
+      ],
+      "gold_keywords": [
+        "lợi ích",
+        "điều phối lưu lượng",
+        "tối ưu hóa"
+      ],
+      "evidence_quote": "thời gian hội tụ nhanh hơn hẳn, giảm thiểu tối đa thời gian gián đoạn dịch vụ",
+      "filter": null,
+      "category": "benefits"
+    },
+    {
+      "id": "Q16",
+      "split": "dev",
+      "question": "Trong Chương 5, mô hình thực nghiệm chủ yếu kiểm tra điều gì?",
+      "expected_answer": "Mô hình thực nghiệm chuyển các nền tảng lý thuyết SR-TE thành mạng có thể quan sát, đo lường và đánh giá.",
+      "gold_source_id": "sr-te-report-2026",
+      "gold_pages": [
+        44
+      ],
+      "gold_keywords": [
+        "mô hình thực nghiệm",
+        "điều hướng",
+        "hiệu năng"
+      ],
+      "evidence_quote": "có thể quan sát, đo lường và đánh giá.",
+      "filter": {
+        "chapter": "Chương 5: Thiết kế mô hình thực nghiệm"
+      },
+      "category": "test"
+    },
+    {
+      "id": "Q17",
+      "split": "dev",
+      "question": "Sau khi xuất hiện link failure, báo cáo tập trung vào chiến lược nào để tiếp tục lưu lượng?",
+      "expected_answer": "Ingress Router phát hiện lỗi liên kết; SR-TE kích hoạt Path Option 20 làm đường dự phòng bằng cách đổi bộ nhãn cục bộ.",
+      "gold_source_id": "sr-te-report-2026",
+      "gold_pages": [
+        63
+      ],
+      "gold_keywords": [
+        "link failure",
+        "backup path",
+        "candidate path"
+      ],
+      "evidence_quote": "Path Option 20 (đường dự phòng",
+      "filter": {
+        "chapter": "Chương 6: Đánh giá"
+      },
+      "category": "test"
+    },
+    {
+      "id": "Q18",
+      "split": "dev",
+      "question": "Chương 1 của báo cáo đặt ra vấn đề cốt lõi gì?",
+      "expected_answer": "Vấn đề cốt lõi là các dịch vụ số hóa đòi hỏi mạng có khả năng điều hướng và tối ưu hóa lưu lượng hiệu quả hơn so với mô hình routing truyền thống.",
+      "gold_source_id": "sr-te-report-2026",
+      "gold_pages": [
+        13
+      ],
+      "gold_keywords": [
+        "lý do chọn đề tài",
+        "mạng truyền tải",
+        "điều hướng"
+      ],
+      "evidence_quote": "nguyên và khó khăn trong việc tích hợp với các hệ thống điều khiển tự động hóa. Để giải quyết những bài toán này, công nghệ Segment Routing đã ra đời như một",
+      "filter": {
+        "chapter": "Chương 1: Mở đầu"
+      },
+      "category": "test"
+    },
+    {
+      "id": "Q19",
+      "split": "dev",
+      "question": "Segment Routing giúp điều hướng lưu lượng theo chính sách bằng cách nào?",
+      "expected_answer": "Bằng cách xây dựng và thực thi danh sách segment, từ đó xác định các nhánh / tuyến đường ưu tiên dựa trên mục tiêu QoS, hành lang mạng hoặc kịch bản dự phòng.",
+      "gold_source_id": "sr-te-report-2026",
+      "gold_pages": [
+        33
+      ],
+      "gold_keywords": [
+        "điều hướng theo chính sách",
+        "segment list",
+        "QoS"
+      ],
+      "evidence_quote": "4.1. Tính năng điều hướng lưu lượng nâng cao (SR-TE Policy). Trong các mạng truyền thống, việc điều hướng lưu lượng đi theo một đường dẫn",
+      "filter": {
+        "chapter": "Chương 4: Tính năng và ứng dụng của SR"
+      },
+      "category": "test"
+    },
+    {
+      "id": "Q20",
+      "split": "dev",
+      "question": "Chương 3 chủ yếu xem xét phần nào của kiến trúc SR?",
+      "expected_answer": "Chủ yếu xem xét triển khai và chuyển tiếp định tuyến theo segment, bao gồm cách SID và hành vi forwarding được tích hợp vào kiến trúc mạng.",
+      "gold_source_id": "sr-te-report-2026",
+      "gold_pages": [
+        28
+      ],
+      "gold_keywords": [
+        "triển khai",
+        "forwarding",
+        "SID"
+      ],
+      "evidence_quote": "3.1. Kiến trúc triển khai SR-MPLS. SR-MPLS là phương thức triển khai Segment Routing trên hạ tầng MPLS hiện có.",
+      "filter": {
+        "chapter": "Chương 3: Kiến trúc triển khai của SR"
+      },
+      "category": "test"
+    },
+    {
+      "id": "Q21",
+      "split": "dev",
+      "question": "Candidate path trong SR-TE được ưu tiên hoặc thay thế theo điều kiện nào của mạng?",
+      "expected_answer": "Theo điều kiện mạng; candidate path mô tả một đường đi khả dĩ có thể được ưu tiên hoặc thay thế.",
+      "gold_source_id": "sr-te-report-2026",
+      "gold_pages": [
+        34
+      ],
+      "gold_keywords": [
+        "candidate path",
+        "điều kiện mạng"
+      ],
+      "evidence_quote": "Policy được định nghĩa và áp dụng tại một nút mạng cụ thể để điều hướng luồng dữ",
+      "filter": null,
+      "category": "keyword_heavy",
+      "day07_group": "A"
+    },
+    {
+      "id": "Q22",
+      "split": "dev",
+      "question": "Khi đối chiếu SR-TE với RSVP-TE, báo cáo nêu xử lý và độ tin cậy là các tiêu chí xem xét nào?",
+      "expected_answer": "Báo cáo xem xét ưu điểm về xử lý và độ tin cậy trong phần so sánh hiệu năng SR-TE với RSVP-TE.",
+      "gold_source_id": "sr-te-report-2026",
+      "gold_pages": [
+        59
+      ],
+      "gold_keywords": [
+        "RSVP-TE",
+        "xử lý",
+        "độ tin cậy"
+      ],
+      "evidence_quote": "6.1.1. Báo hiệu duy trì hầm của RSVP-TE",
+      "filter": {
+        "chapter": "Chương 6: Đánh giá"
+      },
+      "category": "keyword_heavy",
+      "day07_group": "A"
+    },
+    {
+      "id": "Q23",
+      "split": "dev",
+      "question": "Kết hợp thiết kế topology với kịch bản link failure: topology được chuẩn bị bằng thông tin nào, và hệ thống làm gì khi liên kết gặp sự cố?",
+      "expected_answer": "Mô hình dùng OSPFv2 Underlay kết hợp Segment Routing; khi liên kết chính lỗi, Ingress Router phát hiện qua OSPF LSA Update và kích hoạt Path Option 20 dự phòng.",
+      "gold_source_id": "sr-te-report-2026",
+      "gold_pages": [
+        44,
+        45,
+        46,
+        62,
+        63
+      ],
+      "gold_keywords": [],
+      "evidence_quote": "Mô hình thực nghiệm được thiết kế bao gồm một vùng mạng lõi sử dụng giao thức",
+      "required_evidence": [
+        {
+          "source_id": "sr-te-report-2026",
+          "page": 47,
+          "evidence": "Mô hình thực nghiệm được thiết kế bao gồm một vùng mạng lõi sử dụng giao thức"
+        },
+        {
+          "source_id": "sr-te-report-2026",
+          "page": 62,
+          "evidence": "Ngay khi liên kết chính gặp sự cố, hệ thống ghi nhận Ingress Router lập tức phát"
+        },
+        {
+          "source_id": "sr-te-report-2026",
+          "page": 63,
+          "evidence": "Path Option 10 (đường chính) và kích hoạt Path Option 20 (đường dự phòng"
+        }
+      ],
+      "filter": null,
+      "category": "multi_hop",
+      "day07_group": "B"
+    },
+    {
+      "id": "Q24",
+      "split": "dev",
+      "question": "Đặt mô tả candidate path cạnh cách xử lý link failure: báo cáo nói gì riêng về đường đi khả dĩ và hành động chuyển lưu lượng khi lỗi xảy ra?",
+      "expected_answer": "Candidate Path là một phương án định tuyến cụ thể mang theo SID-list; khi liên kết chính lỗi, Ingress Router phát hiện qua OSPF LSA Update và kích hoạt Path Option 20 dự phòng.",
+      "gold_source_id": "sr-te-report-2026",
+      "gold_pages": [
+        34,
+        35,
+        62,
+        63
+      ],
+      "gold_keywords": [],
+      "evidence_quote": "mỗi Candidate Path đại diện cho một phương án định",
+      "required_evidence": [
+        {
+          "source_id": "sr-te-report-2026",
+          "page": 37,
+          "evidence": "mỗi Candidate Path đại diện cho một phương án định"
+        },
+        {
+          "source_id": "sr-te-report-2026",
+          "page": 62,
+          "evidence": "Ngay khi liên kết chính gặp sự cố, hệ thống ghi nhận Ingress Router lập tức phát"
+        },
+        {
+          "source_id": "sr-te-report-2026",
+          "page": 63,
+          "evidence": "Path Option 10 (đường chính) và kích hoạt Path Option 20 (đường dự phòng"
+        }
+      ],
+      "filter": null,
+      "category": "multi_hop",
+      "day07_group": "B"
+    },
+    {
+      "id": "Q25",
+      "split": "dev",
+      "question": "Báo cáo cho biết nhóm đã trả chính xác bao nhiêu đồng để mua giấy phép EVE-NG không?",
+      "answerable": false,
+      "expected_behavior": "search_and_abstain",
+      "absence_reason": "Báo cáo mô tả việc dùng EVE-NG để mô phỏng mạng nhưng không cung cấp khoản chi hoặc giá giấy phép bằng VND.",
+      "gold_source_id": "sr-te-report-2026",
+      "gold_pages": [],
+      "gold_keywords": [],
+      "evidence_quote": "",
+      "filter": null,
+      "category": "unanswerable",
+      "day07_group": "C"
+    },
+    {
+      "id": "Q26",
+      "split": "dev",
+      "question": "Lưu lượng đỉnh theo Mbps của một mạng nhà mạng đang vận hành thực tế được báo cáo đo vào thời điểm nào?",
+      "answerable": false,
+      "expected_behavior": "search_and_abstain",
+      "absence_reason": "Báo cáo trình bày mô hình thực nghiệm mô phỏng; không nêu phép đo lưu lượng đỉnh của một mạng nhà mạng đang vận hành thực tế.",
+      "gold_source_id": "sr-te-report-2026",
+      "gold_pages": [],
+      "gold_keywords": [],
+      "evidence_quote": "",
+      "filter": null,
+      "category": "unanswerable",
+      "day07_group": "C"
+    },
+    {
+      "id": "Q27",
+      "split": "dev",
+      "question": "Trong một sự cố trên mạng thương mại đang khai thác, chính xác có bao nhiêu phút gián đoạn dịch vụ được ghi nhận?",
+      "answerable": false,
+      "expected_behavior": "search_and_abstain",
+      "absence_reason": "Tài liệu mô tả kết quả mô phỏng/thực nghiệm SR-TE, không ghi nhận một sự cố vận hành trên mạng thương mại với số phút gián đoạn thực tế.",
+      "gold_source_id": "sr-te-report-2026",
+      "gold_pages": [],
+      "gold_keywords": [],
+      "evidence_quote": "",
+      "filter": null,
+      "category": "unanswerable",
+      "day07_group": "C"
+    },
+    {
+      "id": "Q28",
+      "split": "dev",
+      "question": "Báo cáo nêu tên nhà mạng thương mại nào đã cung cấp dữ liệu lưu lượng thực tế cho thí nghiệm?",
+      "answerable": false,
+      "expected_behavior": "search_and_abstain",
+      "absence_reason": "Phần thí nghiệm mô tả topology/mô hình mô phỏng và không xác định nhà mạng thương mại cung cấp dữ liệu lưu lượng thực tế.",
+      "gold_source_id": "sr-te-report-2026",
+      "gold_pages": [],
+      "gold_keywords": [],
+      "evidence_quote": "",
+      "filter": null,
+      "category": "unanswerable",
+      "day07_group": "C"
+    },
+    {
+      "id": "Q29",
+      "split": "test",
+      "question": "Một Candidate Path thể hiện loại phương án nào và mang theo thành phần định tuyến gì?",
+      "expected_answer": "Mỗi Candidate Path là một phương án định tuyến cụ thể, mang theo một hoặc nhiều SID-list để ép luồng qua chuỗi router.",
+      "gold_source_id": "sr-te-report-2026",
+      "gold_pages": [37],
+      "gold_keywords": ["Candidate Path", "SID-list"],
+      "evidence_quote": "mỗi Candidate Path đại diện cho một phương án định",
+      "filter": null,
+      "category": "heldout_concept"
+    },
+    {
+      "id": "Q30",
+      "split": "test",
+      "question": "Báo cáo mô tả Ingress Router phát hiện liên kết chính gặp sự cố bằng cách nào?",
+      "expected_answer": "Ingress Router phát hiện sự cố thông qua bản tin OSPF LSA Update.",
+      "gold_source_id": "sr-te-report-2026",
+      "gold_pages": [62],
+      "gold_keywords": ["Ingress Router", "OSPF LSA Update"],
+      "evidence_quote": "Ngay khi liên kết chính gặp sự cố, hệ thống ghi nhận Ingress Router lập tức phát",
+      "filter": null,
+      "category": "heldout_recovery"
+    },
+    {
+      "id": "Q31",
+      "split": "test",
+      "question": "Sau khi Path Option 10 là đường chính, path option nào được kích hoạt làm đường dự phòng?",
+      "expected_answer": "Path Option 20 được kích hoạt làm đường dự phòng.",
+      "gold_source_id": "sr-te-report-2026",
+      "gold_pages": [63],
+      "gold_keywords": ["Path Option 20", "đường dự phòng"],
+      "evidence_quote": "Path Option 10 (đường chính) và kích hoạt Path Option 20 (đường dự phòng",
+      "filter": null,
+      "category": "heldout_recovery"
+    },
+    {
+      "id": "Q32",
+      "split": "test",
+      "question": "Mô hình mạng lõi trong phần thiết kế dùng underlay nào và kết hợp với công nghệ gì?",
+      "expected_answer": "Mạng lõi dùng OSPFv2 làm underlay và kết hợp Segment Routing.",
+      "gold_source_id": "sr-te-report-2026",
+      "gold_pages": [47],
+      "gold_keywords": ["OSPFv2", "Underlay", "Segment Routing"],
+      "evidence_quote": "OSPFv2 làm Underlay, kết hợp với công nghệ Segment Routing.",
+      "filter": null,
+      "category": "heldout_architecture"
+    },
+    {
+      "id": "Q33",
+      "split": "test",
+      "question": "Mô hình thực nghiệm yêu cầu tối thiểu bao nhiêu tuyến khác biệt giữa nguồn và đích để có thể kiểm tra nắn luồng?",
+      "expected_answer": "Cần ít nhất hai tuyến khác biệt về thông số giữa điểm nguồn và điểm đích.",
+      "gold_source_id": "sr-te-report-2026",
+      "gold_pages": [44],
+      "gold_keywords": ["hai đường đi", "nguồn", "đích"],
+      "evidence_quote": "Phải có ít nhất hai đường đi khác biệt về",
+      "filter": null,
+      "category": "heldout_method"
+    },
+    {
+      "id": "Q34",
+      "split": "test",
+      "question": "Có chính xác bao nhiêu thuê bao của một nhà mạng khai thác thực tế bị ảnh hưởng trong sự cố được báo cáo?",
+      "answerable": false,
+      "expected_behavior": "search_and_abstain",
+      "absence_reason": "Tài liệu báo cáo mô phỏng sự cố trong lab, không công bố số thuê bao của một nhà mạng khai thác thực tế bị ảnh hưởng.",
+      "gold_source_id": "sr-te-report-2026",
+      "gold_pages": [],
+      "gold_keywords": [],
+      "evidence_quote": "",
+      "filter": null,
+      "category": "heldout_unanswerable"
+    },
+    {
+      "id": "Q35",
+      "split": "test",
+      "question": "Doanh thu thương mại tăng chính xác bao nhiêu VND sau khi triển khai SR-TE?",
+      "answerable": false,
+      "expected_behavior": "search_and_abstain",
+      "absence_reason": "Tài liệu tập trung vào thiết kế và kết quả mô phỏng kỹ thuật, không báo cáo doanh thu thương mại hay mức tăng doanh thu bằng VND.",
+      "gold_source_id": "sr-te-report-2026",
+      "gold_pages": [],
+      "gold_keywords": [],
+      "evidence_quote": "",
+      "filter": null,
+      "category": "heldout_unanswerable"
+    }
+  ]
+}

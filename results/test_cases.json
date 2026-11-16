@@ -1,0 +1,47 @@
+[
+  {
+    "id": "Q16",
+    "split": "test",
+    "answerable": true
+  },
+  {
+    "id": "Q17",
+    "split": "test",
+    "answerable": true
+  },
+  {
+    "id": "Q18",
+    "split": "test",
+    "answerable": true
+  },
+  {
+    "id": "Q19",
+    "split": "test",
+    "answerable": true
+  },
+  {
+    "id": "Q20",
+    "split": "test",
+    "answerable": true
+  },
+  {
+    "id": "Q22",
+    "split": "test",
+    "answerable": true
+  },
+  {
+    "id": "Q24",
+    "split": "test",
+    "answerable": true
+  },
+  {
+    "id": "Q27",
+    "split": "test",
+    "answerable": false
+  },
+  {
+    "id": "Q28",
+    "split": "test",
+    "answerable": false
+  }
+]
